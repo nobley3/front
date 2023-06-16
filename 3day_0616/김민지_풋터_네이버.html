@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outside_wrap{
+            width: 100%;
+            background-color: #f5f6f7;
+        }
+        .wrap{
+            width: 1500px;
+            display: flex;
+            margin: 0 auto;   
+        }
+        .wrap2{
+            width: 33%;
+            display: flex;
+        }
+        .wrap2_2{
+            width: 33%;
+            display: flex;
+            margin-left: 150px;
+        }
+        .wrap2_3{  /*div 내부 배치 방법을 몰라서 margin 사용*/
+            width: 33%;
+            display: flex;
+            margin-left: 100px; 
+        }
+        .line1{
+            color:#03c75a;
+            font-weight: bold;
+        }
+        .in_right{
+            margin-left: 20px;
+            line-height: 1.1;
+        }
+        img{
+            width: 200px;
+            height: 120px;
+            margin-top: 8px; /*이미지를 수직 중앙에 배치하는법을 몰라서 margin 사용*/
+        }
+        hr{ 
+            width: 1500px;
+            border: 0px;
+            height: 1px;
+            background-color:#ebebeb; 
+        }
+        .wrap_notice{
+            width: 1500px;
+            display: flex;
+            margin: 0 auto;
+        }
+        .wrap_notice2{
+            width: 90%;
+            display: flex;
+        }
+        .notice{
+            font-weight: bold;
+        }
+        .notice_contents{
+            margin-left: 10px;
+        }
+        .wrap_service{
+            width: 10%;
+            text-align: right;
+            display: flex;
+        }
+        .service{
+            font-weight: bold;
+            margin-top: 15px; /*a태그가 수직 중앙에 오지 않아서 margin 사용*/
+        }
+        .wrap_line3{
+            width: 1500px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .cramps{
+            font-weight: bold;
+            color: lightgray;
+            margin-left: 15px;
+        }
+        .eng{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        a{
+            text-decoration-line: none;
+            color: black;
+        }
+        .a_blod{
+            font-weight: bold;
+        }
+        .wrap_eng{
+            width: 7%;
+        }
+        .hyperlink{
+            width: 65%;
+        }
+        .site{
+            width: 14%;
+            line-height: 13px;
+            margin-top: 25px;   
+            display: flex;
+        }
+        .a_line3{
+            display: inline-block;
+            margin: 10px 25px;
+        }
+        .site_img{
+            width: 50px;
+            height: 50px;
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        .a_site{
+            font-weight: bold;
+        }
+        .site_text{
+            margin-left: 25px;
+        }
+        .wrap_lastline{
+            width: 1500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .a_line3_bold{
+            font-weight: bold;
+            display: inline-block;
+            margin: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outside_wrap">
+
+        <div class="wrap">
+                <div class="wrap2">
+                    <div>
+                        <img src="https://ssl.pstatic.net/melona/libs/1450/1450964/c42378091ab4ca7e5e7a_20230605101812804_2.png">
+                    </div>
+                    <div class="in_right">
+                        <p class="line1">초록우산 어린이재단</p>
+                        <a class="a_blod" href="">제이에스티나 해피니스링</a>
+                        <p>아이들의 행복 응원하고 <br> 해피니스링 받기</p>
+                    </div>
+                </div>
+
+                <div class="wrap2_2">
+                    <div>
+                        <img src="https://ssl.pstatic.net/melona/libs/1453/1453297/f4a469db6209a7b38085_20230608105549404.png">
+                    </div>
+                    <div class="in_right">
+                        <p class="line1">네이버 커넥트재단</p>
+                        <a class="a_blod href=">무료 온라인 스터디 모집</a>
+                        <p>다함께 프로그래밍 시작 <br> 6주동안 파이썬 배우기</p>
+                    </div>
+                </div>
+
+                <div class="wrap2_3">
+                    <div>
+                        <img src="https://ssl.pstatic.net/melona/libs/1453/1453283/c198de5831c5cd84f796_20230608102136317.jpg">
+                    </div>
+                    <div class="in_right">
+                        <p class="line1">경기남부청x분당경찰서</p>
+                        <a class="a_blod href=" href="">NO EXIT 캠페인</a>
+                        <p>출구 없는 미로 마약<br> 절대 시작하지 마세요</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="wrap_notice">
+                <div class="wrap_notice2">
+                    <p class="notice">공지사항</p>
+                    <p class="notice_contents">네이버 '개인정보 처리방침' 변경에 대해 안내 말씀드립니다.</p>
+                </div>
+                
+                <div class="wrap_service">
+                    <a class="service" href="">서비스 전체보기</a>
+                    <p class="cramps">></p>
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="wrap_line3">
+                <div class="wrap_eng">
+                    <p class="eng">Creaters</p>
+                    <p class="eng">Partners</p>
+                    <p class="eng">Developers</p>
+                </div>
+
+                <div class="hyperlink"> <!--세로선을 긋고싶은데 방법을 모르겠습니다-->
+                    <a class="a_line3" href="">크리에이터</a>
+                    <a class="a_line3" href="">스몰비즈니스</a> <br>
+
+                    <a class="a_line3"  href="">SME 풀케어 시스템템</a>
+                    <a class="a_line3"  href="">비즈니스·광고</a>
+                    <a class="a_line3"  href="">스토어 개설</a>
+                    <a class="a_line3"  href="">지역업체 등록</a>
+                    <a class="a_line3"  href="">엑스퍼트 등록</a> <br>
+
+                    <a class="a_line3"  href="">네이버 개발자 센터</a>
+                    <a class="a_line3"  href="">오픈 API</a>
+                    <a class="a_line3"  href="">오픈소스</a>
+                    <a class="a_line3"  href="">네이버 D2</a>
+                    <a class="a_line3"  href="">네이버 D2SF</a>
+                    <a class="a_line3"  href="">네이버 랩스</a>
+                </div>
+
+                <div class="site">
+                    <div class="site_text">
+                        <p class="a_site">웨일 브라우저</p>
+                        <a href="">이용안내</a>
+                    </div>
+                    <div>
+                        <img class= "site_img" src="data:image/png;base64,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">
+                    </div>
+                </div>
+
+                <div class="site">
+                    <div class="site_text">
+                        <p class="a_site">웨일 브라우저</p>
+                        <a href="">이용안내</a>
+                    </div>
+                    <div>
+                        <img class= "site_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABkCAMAAAA47XeXAAAAgVBMVEUAAADN5PdGm99Gm99Gm99Gm99Gm95Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gmt9Gm99Gm99Gm99Gm95Gm99Gm99Gm95Gm99Hm99Gm99Gm9/////3+/5cp+LO5PfR5/fO5fdcp+P7/f/zv5GhAAAAInRSTlMA/v7vH9u5qJNgGwb6l8a9uqF9WFUyLxYMCtbVmLCwe4OCj8gzEgAAA0NJREFUaN7NmmFz4iAQhkkwMTHGWrWtWvWuq8mF+/8/8Ey2nb0OhSwQZnw+MHQ7pbjAy2s2gsuiLPJMLpcyy4tyISZltnmHbxw3MzEVr/MUNNL5q5iCt2ccXCN9fhPB7CQYkTsRRlWDlboSAexzGCHfC28OKxhldfDOzBMwePLNTw0sauHFFphshQcLCUwkaQRfXYBPSkrEUBdv3jezcXXhw1ciUhc+fCUidQlH7qzqEk5d2dQlnHxvU5dwVgdXdSGclaiGyamt6hLO1qIu4ZASzcFE092SBprk1jagulvXAAw/qb5N7m176xQYmOPoLymYaK/X65/PNhlagE6LGUhfRM8FjNzuf/73//bHmInzoJEpjMyeWpp9RzGz/PT6+QvMNO2Q+67PPeYZY5h7jDVg5OM+/BGikd13JfDAj/Ad1WLMyEyUwKPT00ypN1GKAljQJtFiFgqRe86eYhbWIvPPPR5d+9pKiIgUwKNJdHXBvW9jyRye1EWLWYfnJcd141Byspizz7gbUyWDuqiW0v15D9g3ZgF86JwyKUgUHJaATUmS5rsEdkkTZLjZS8Alw+skFr8Nl6H6uosShaKOp3Zo+/jgFTDe+wcSfv0yFGfQaLX7tDO0reXOPRuMCG4Q11Y3IiYblWgzS7R+h31qdRtlGB7zikeUckz+AB3a8FuMqD7Cd2nhUHLOEIkLubQIkEuLxIdwEwUy3HyXxsbgPMJcGuGox+TSIugxuTQ+KHIaAS5N92eIIuMT5tJoPfHy5q9yKoXLelLuKRri0mjMQdhwTPw6Sv8pzKXhFyhNilEwkSCXRrnAnaPnJdyl0UrqXircpeHVglnv+62K4NJo3lFcGmWd79KO7OQoXAE8XNO6tIQGxj7fpfHTwk8RubQLWEGvgTNGKzj01fixunCMCCYcvSSlaFwUyKVx86J3bczpUR3zimq1LqdosAUbJF54ar+uk5Gju436mPTk8ZAXFdO93HRYTesUVgf3B+y0XdxLfdVputmfKp/iBtNjyl3c0kzUwtJIWewIPvAL9LOyWLsV9WAps3VRzh6hJBm3oOqsRKfHLGYzS/GP+iLBuBKdqkd+iWPkFZTHf4Em4us/uhI5qss/6zK5u8+AXpwAAAAASUVORK5CYII=">
+                    </div>
+                </div>
+        </div>
+
+            <hr>
+
+            <div class="wrap_lastline">
+                <a class="a_line3" href="">회사소개</a>
+                <a class="a_line3" href="">인재채용</a>
+                <a class="a_line3" href="">제휴제안</a>
+                <a class="a_line3" href="">이용약관</a>
+                <a class="a_line3_bold" href="">개인정보처리방침</a>
+                <a class="a_line3" href="">청소년보호정책</a>
+                <a class="a_line3" href="">네이버 정책</a>
+                <a class="a_line3" href="">고객센터</a>
+                <a class="a_line3_bold" href="">ⓒ NAVER Corp.</a>
+            </div>
+
+
+
+    </div>
+    
+</body>
+</html>

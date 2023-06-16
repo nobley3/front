@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>주문하기</button>
+    <select>
+        <option>선택하세요</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+
+    <!--여러개 선택 가능-->
+    <input type="checkbox">짜장면
+    <input type="checkbox">짬뽕
+    <input type="checkbox">간짜장
+
+    <!--여러개 중 한 개 선택 가능, 같은name 으로 그룹지정-->
+    <input type="radio" name="food">짜장면
+    <input type="radio" name="food">짬뽕
+    <input type="radio" name="food">간짜장
+
+    <fieldset>
+        <legend>개인정보</legend>
+        <label for="user-name">이름</label>: <input type="=text" id="user-name">
+    </fieldset>
+
+    <!--datalist-->
+    <input type="text" list="choice">
+    <datalist id="choice">
+        <option value="사과"></option>
+        <option value="포도"></option>
+        <option value="딸기"></option>
+    </datalist>
+
+    <textarea cols="30" rows="10"></textarea>
+</body>
+</html>
