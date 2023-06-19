@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .wrap{
+            display: flex;
+            position: relative;
+        }
+        .button1{
+            width: 100px;
+            height: 100px;
+            background-color: palevioletred;
+            color: white;
+            line-height: 50px;
+            border-radius: 5px;
+            border: 3px solid purple;
+            font-size: 25px;
+            
+        }
+        .button1:focus{
+            background-color: blueviolet;
+            
+        }
+        .button2:active{
+            background-color: goldenrod; 
+        }
+        .button3:hover{
+            background-color: slateblue;
+            
+        }
+        .button4:active{
+            background-color: seagreen;
+        }
+        .button2{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            color: white;
+            line-height: 50px;
+            border-radius: 20px;
+            border: 3px solid lightslategray;
+            font-size: 20px;
+           
+            margin-left: 10px;
+            
+        }
+        .button3{
+            width: 100px;
+            height: 50px;
+            background-color: aquamarine;
+            color: black;
+            line-height: auto;
+            
+            font-weight: bold;
+            margin-left: 10px;
+            margin:25px;
+            border: 5px solid purple;
+        }
+        .button4{
+            width: 100px;
+            height: 30px;
+            background-color: teal;
+            color: white;
+            line-height: auto;
+            
+            font-weight: bold;
+            margin-top: 35px;
+           border-radius: 50px;
+           border: 7px solid sandybrown;
+          
+        }
+        .box{
+            text-align: center;
+        }
+
+        .button4:hover{
+        position: relative;
+        top: -50px;
+        }
+    </style>
+</head>
+<body>
+    <h2> div를 사용해서 나만의 버튼 만들기</h2>
+
+    <div class="wrap">
+        <button class="box button1">button</button>
+        <button class="box button2">가입하기</button>
+        <button class="box button3">버튼</button>
+        <button class="box button4">button</button>
+    </div>
+
+</body>
+</html>
