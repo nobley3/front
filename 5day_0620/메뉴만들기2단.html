@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       *{
+        padding: 0px;
+        margin: 0px;
+       }
+
+       ul{
+        list-style: none;
+       }
+
+       .menu-item > ul{
+        display: none; /* 공간이 사라짐*/
+       }    
+       .menu-wrap{
+        display: flex;
+       }
+       
+       .menu-item{
+        border: 1px solid black;
+        width: 200px;
+        height: 40px;
+       }
+       .menu-item:hover  ul{
+        display: block;
+        background-color: #ed9b9b;
+        text-align: center;
+        padding: 5px;
+       }
+       .title{
+        display: block;
+        height: 40px;
+       }
+       .menu-item ul li{
+        margin-top: 5px;
+       }
+    </style>
+</head>
+<body>
+
+    <!--상위메뉴-->
+    <ul class="menu-wrap">
+        <li class="menu-item"><span class="title">메뉴1</span>
+            <!-- 하위 숨김메뉴-->
+            <ul>
+                <li>하위메뉴</li>
+                <li>하위메뉴</li>
+                <li>하위메뉴</li>
+                <li>하위메뉴</li>
+            </ul>
+        </li>
+        <!--상위메뉴-->
+        <li  class="menu-item"><span class="title">메뉴2</span>
+             <!-- 하위 숨김메뉴-->
+             <ul>
+                <li>하위메뉴2</li>
+                <li>하위메뉴2</li>
+                <li>하위메뉴2</li>
+                <li>하위메뉴2</li>
+            </ul>
+        </li>
+         <!--상위메뉴-->
+        <li  class="menu-item"><span class="title">메뉴3</span>
+             <!-- 하위 숨김메뉴-->
+             <ul>
+                <li>하위메뉴3</li>
+                <li>하위메뉴3</li>
+                <li>하위메뉴3</li>
+                <li>하위메뉴3</li>
+            </ul>
+        </li>
+         <!--상위메뉴-->
+        <li  class="menu-item"><span class="title">메뉴4</span>
+             <!-- 하위 숨김메뉴-->
+             <ul>
+                <li>하위메뉴4</li>
+                <li>하위메뉴4</li>
+                <li>하위메뉴4</li>
+                <li>하위메뉴4</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

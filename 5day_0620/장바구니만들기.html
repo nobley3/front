@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .home_wrap{
+            width: 1200px;
+            height: 400px;
+           
+        }
+        .icon{
+            border-radius: 200px;
+            width: 80px;
+            height: 80px;
+           
+            position: relative;
+        }
+       .text{
+        position: absolute;
+        top: 60px;
+        font-weight: bold;
+       }
+       table{
+        width: 700px;
+        height: 120px;
+        border: 1px solid gray;
+        border-collapse: collapse;
+        margin: 0 auto;
+        margin-top: 100px;
+        font-size: 13px;
+       }
+       thead{
+        background-color: lightcoral;
+        text-align: center;
+        height: 40px;
+        font-weight: bold;
+        
+       }
+       td{
+        border: 1px solid gray;
+        text-align: center;
+        width: 600px;
+       }
+      
+       .cart{
+        width: 40px;
+        height: 40px;
+        margin-bottom: -4px;
+       }
+       tfoot{
+        height: 30px;
+       }
+     tfoot td:last-child{
+        background-color: red;
+        color: white;
+        font-weight: bold;
+     }
+       caption{
+        font-weight: bold;
+        font-size: 20px;
+       }
+       
+    </style>
+</head>
+<body>
+   <div class="home_wrap">
+    <img class="icon" src="https://us.123rf.com/450wm/siamimages/siamimages1701/siamimages170101629/70031704-%ED%99%88-%EC%95%84%EC%9D%B4%EC%BD%98.jpg?ver=6">
+    <span class="text">홈으로</span>
+
+    <div>
+        <table>
+            <caption>CART LIST
+                <img class="cart" src="https://img.freepik.com/premium-vector/shopping-cart-icon-in-comic-style-trolley-cartoon-vector-illustration-on-white-isolated-background-basket-splash-effect-business-concept_157943-17074.jpg">
+            </caption>
+            <thead>
+                <tr>
+                    <td>주문날짜</td>
+                    <td>제품명</td>
+                    <td>단가</td>
+                    <td>수량</td>
+                    <td>금액</td>
+                    <td>삭제</td>
+                </tr>
+            </thead>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>삭제</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="5"></td>
+            
+                    <td>주문하기</td>
+                    
+                </tr>
+            </tfoot>
+            
+        </table>
+       </div>
+   </div>
+   
+</body>
+</html>
