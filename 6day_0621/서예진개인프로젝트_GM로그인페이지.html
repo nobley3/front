@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENTLE MONSTER 로그인페이지</title>
+    <style>
+    .web{
+        width: 100%;
+        height: 900px;
+        
+        margin: 0 auto;
+        position: relative;
+    }
+    .logo{
+      width: auto;
+      height: 80px;
+    }
+    .menu_wrap{
+      display: flex;
+      position: relative;
+    }
+    .menu{
+     
+      position: absolute;
+     top: 15px;
+     left: 600px;
+    
+    }
+    li{
+      list-style: none;
+      float: left;
+      
+     
+    }
+    .text{
+      text-decoration: none;
+      color: black;
+      padding-left: 25px;
+      font-weight: bold;
+      font-size: 14px;
+      
+    }
+    .icon_wrap{
+     
+      position: absolute;
+      right: 10px;
+      top: 1px;
+    }
+    .login{
+      width: 25px;
+      height: 25px;
+      padding: 10px;
+    }
+    .login_page{
+        width: 440px;
+        height: 368px;
+       
+        margin: 0 auto;
+        
+    }
+    .login1{
+        width: 440px;
+        height: 200px;
+        margin-top: 150px;
+    }
+    .login_title{
+      position: absolute;
+      top: 150px;
+      
+
+    }
+    input{
+        width: 440px;
+        height: 40px;
+        
+
+    }
+    .pw{
+        color: black;
+        font-size: 13px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .login2{
+        width: 440px;
+        height: 300px;
+       
+        margin-top: 50px;
+        
+    }
+    .btn1, .btn2, .btn3{
+        width: 440px;
+        height: 40px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .btn1{
+        background-color: black;
+        color: white;
+        border: 0px;
+        font-weight: bold;
+    }
+    .btn2{
+        background-color: #f7e14c;
+        border: 0px;
+        position: relative;
+    }
+    .kkao{
+        width: 30px;
+        height: 30px;
+       position: absolute;
+       left: 10px;
+       top: 5px;
+    }
+    .apple{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 10px;
+       top: 5px;
+    }
+    .btn3{
+        background-color: white;
+        border: 1px solid black;
+        position: relative;
+        color: #343434;
+    }
+    </style>
+</head>
+<body>
+    <div class="web">
+        <div class="menu_wrap">
+            <div>
+                <a href="https://www.gentlemonster.com/kr/"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Gentle_monster_logo.png"></a>
+            </div>
+            <div class="menu">
+              <ul>
+                <li ><a class="text" href="https://www.gentlemonster.com/kr/shop/list/sunglasses/bold-collection">선글라스</a></li>
+                <li ><a class="text" href="https://www.gentlemonster.com/kr/shop/list/glasses/view-all">안경</a></li>
+                <li ><a class="text" href="https://www.gentlemonster.com/kr/shop/list/collaborations/caixukun">콜라보레이션</a></li>
+                <li ><a class="text" href="https://www.gentlemonster.com/kr/styles">스타일</a></li>
+                <li ><a class="text" href="https://www.gentlemonster.com/kr/stories">브랜드이슈</a></li>
+                <li ><a class="text" href="https://www.gentlemonster.com/kr/store?country=kr">매장보기</a></li>
+                <li ><a class="text" href="https://www.gentlemonster.com/kr/productservice">수리서비스</a></li>
+              </ul>
+            </div>
+            <div class="icon_wrap">
+              <ul>
+                <li><a href="">
+                  <img class="login" src="https://cdn-icons-png.flaticon.com/512/5122/5122475.png"></a>
+                </li>
+                <li>
+                  <a href="">
+                    <img class="login" src="https://cdn-icons-png.flaticon.com/512/1942/1942615.png"></a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5500/6day_0621/%EC%84%9C%EC%98%88%EC%A7%84%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_GM%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.html" target='_blank' rel="noreferrer noopener">
+                    <img class="login" src="https://m.kokacharm.com/SkinImg/img/footer_menu_icon_01.png"></a>
+                </li>
+                <li>
+                  <a href="">
+                    <img class="login" src="https://cdn-icons-png.flaticon.com/512/257/257888.png"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="login_page">
+            
+                <h4 class="login_title">로그인</h4>
+           <div class="login1">
+            <p>이메일</p>
+            <input title="이 입력란을 작성하세요." type="text">
+            <p>비밀번호</p>
+            <input title="이 입력란을 작성하세요." type="text">
+            <a class="pw" href="">비밀번호 찾기</a>
+           </div>
+            <div class="login2">
+                <div>
+                    <button class="btn1">로그인</button>
+                    <button class="btn2">카카오 로그인
+                        <img class="kkao" src="https://i0.wp.com/forhappywomen.com/wp-content/uploads/2018/11/%EC%82%B0%EB%B6%80%EC%9D%B8%EA%B3%BC-%ED%8F%AC%ED%95%B4%ED%94%BC%EC%9A%B0%EB%A8%BC-%EB%AC%B8%EC%9D%98-%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%B9%9C%EA%B5%AC-%EB%B2%84%ED%8A%BC.png?resize=586%2C586&ssl=1">
+                    </button>
+                    <button class="btn3">Apple 로그인
+                        <img class="apple" src="https://cdn.icon-icons.com/icons2/2783/PNG/512/apple_icon_177157.png">
+                    </button>
+                </div>
+            </div>
+          </section>
+    </div>
+</body>
+</html>

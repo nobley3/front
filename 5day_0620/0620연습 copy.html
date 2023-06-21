@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height: 100px;
+            background-color: rgb(245, 248, 248);
+            position: relative;
+        }
+        .acon{
+            
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+        .search{
+            width:220px;
+            height: 40px;
+            border: 1px solid black;
+            position: relative;
+            position: absolute;
+            right:10px;
+            bottom:20px;
+            border: 1.5px solid lightblue;
+        }
+        .icon{
+            width: 30px;
+            height: 30px;
+            margin-top: 5px;
+            position: absolute;
+            right: 5px;
+        }
+        .searchbar{
+           border: 1px solid black;
+           position: absolute;
+           top: 10px;
+           border:0px;
+           outline: 0px;
+            background-color: rgb(245, 248, 248);  
+        }
+        nav{
+            height: 40px;
+            padding: 20px;
+            background-color: rgb(232, 243, 243);
+            position: relative;
+           
+            
+        }
+       .menu_wrap{
+        
+        height: 50px;
+        width: 250px;
+        position: absolute;
+        right: 0px;
+       }
+        .menu{
+            list-style: none;
+            float: left;
+           
+           padding: 10px;
+        }
+        section{
+            height: 600px;
+            margin: 50px;
+            border: 1px solid red;
+            position: relative;
+        }
+       .process{
+        width: 200px;
+        height: 220px;
+       }
+       .list{
+        width: 300px;
+        padding: 20px;
+        border: 0.5px solid rgb (255 , 241 , 241 );
+        display: inline-block;
+        list-style: none;
+        font-size: 13px;
+        text-align: center;
+       }
+       .list_wrap{
+       position: absolute;
+       bottom: 250px;
+       left: 200px;
+       border: 1px solid black;
+       
+       }
+    </style>
+</head>
+<body>
+    <header>
+       <div>
+        <img class="acon" src="https://acornedu.co.kr/images/n_logo.png">
+       </div>
+        <div class="search">
+          
+                <input class="searchbar" type="text">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1786/1786987.png">
+        </div>
+    </header>
+    <nav>
+        <div class="menu_wrap">
+            <ul>
+                <li class="menu">로그인</li>
+                <li class="menu">|</li>
+                <li class="menu">홈으로</li>
+            </ul>
+        </div>
+       
+    </nav>
+    <section>
+        <div class="list_wrap">
+            <ul>
+                <li class="list">
+                    <img class="process" src="https://newsimg.sedaily.com/2023/01/27/29KMXUBOPB_1.JPG"><br>프로젝트기반 빅데이터 분석과정
+                </li>
+                <li  class="list">
+                    <img class="process" src="https://www.tippingkorea.co.kr/data/education/15966107681.png"><br>자바(Java)&안드로이드 개발자 양성과정
+                </li>
+                <li  class="list">
+                    <img class="process" src="https://cfile1.onoffmix.com/images/event/232523/s"><br>Web기반 프론트엔드 자바개발자 양성과정
+                </li>
+            </ul>
+        </div>
+       
+    </section>
+    <footer></footer>
+</body>
+</html>
