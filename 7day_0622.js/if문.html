@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>IF문 분기문</h2>
+    <p>if 문법</p>
+    if(조건){
+        //조건이 만족할 때 수행할 코드
+    }
+
+    if(조건1){
+        //조건1 만족할 때 수행할 코드
+    }else if(조건2){ // 위의 조건이 만족스럽지 않을 때만 수행됨
+        //조건 2 만족할 때 수행할 코드
+    }else{//위의 조건이 모두 아닌경우,
+        //위의 조건이 아닌경우에 수행할 코드 
+        //else 뒤에는 조건이 올 수 없음
+    }
+
+    <script>
+
+        let kor=95; //등급구하기 A,B,C,나머지F
+        let grade;
+
+        if( kor >=90){
+            grade="A";//" ", ' '
+        }else if(kor>=90){
+            grade="B";
+        }else if(kor >=70){
+            grade="C";
+        }else{
+            grade="F";
+        }
+
+        alert(grade);
+
+        
+
+    </script>
+
+</body>
+</html>

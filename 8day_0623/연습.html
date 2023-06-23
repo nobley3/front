@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    문제1 수를 입력받아 제곱구하기 (입력:prompt(), 출력: alert(), document.write())
+    문제2 수를 입력받아 원하는 만큼 별 출력하기
+    문제3 수를 입력받아 원하는 만큼 내 이름 출력하기
+    문제4 지금을 입력받아 원주(원의둘레) 구하기
+    문제5 점수를 입력받아 학점을 구하시오(90점이상 A, 80점이상 B, 나머지F)
+    문제6 국어, 영어 수학점수를 받아 평균을 출력하시오
+    문제7 국어 ,영어점수 입력받아 모두 90점  이상이면 장학금 지급 출력
+    문제8 카드사용금액을 입력받아 50만원 이상 "VVIP" 30이상이면 "VIP" 나머지 "BRONZE"
+
+    <script>
+/* 문제1
+        let num =  prompt(" 수를 입력하세요");
+             alert(num*num);
+*/
+
+/* 문제2
+
+        let num = prompt("수를 입력하세요");
+         for(let i=0;i<num;i++){
+           document.write("*");
+         }
+         
+*/
+
+/* 문제3
+
+        let num = prompt("수를 입력하세요");
+            for(let i=0; i<num; i++){
+            document.write("서예진");
+        }
+*/  
+
+/*문제4
+        let dia = prompt(" 지름을 입력하세요");
+            alert(dia*3.14);
+*/
+
+/*문제5
+        let score =  prompt("점수를 입력하세요.");
+       
+            if(score>=90){
+                grade=("A");
+            }else if(score>=80){
+                grade=("B");
+            }else{
+                grade="F";
+            }
+            alert(grade);
+ */ 
+
+ /*문제6
+        let kor =  parseInt (prompt("국어점수를 입력하세요."));
+        let eng =  parseInt (prompt("영어점수를 입력하세요."));
+        let math = parseInt (prompt("수학점수를 입력하세요."));
+            
+        let avg = (kor+eng+math)/3;
+
+        alert(avg);
+*/
+
+/*문제7
+        let kor = parseFloat(prompt("국어점수를 입력하세요"));
+        let eng = parseFloat(prompt("영어점수를 입력하세요"));
+
+        if(kor>=90 && eng>=90){
+            alert("장학금 지급");
+        }
+*/
+
+
+/*문제8
+        let card = parseFloat(prompt("카드사용금액을 입력하세요"));
+        if(card>=500000){
+            alert("VVIP")
+        }else if(card>=300000){
+            alert("VIP");
+        }else{
+            alert("BRONZE");
+        }
+*/
+    </script>
+</body>
+</html>
