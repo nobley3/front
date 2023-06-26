@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    한달 ( 4주 : 1주 :5일, 20개의 점심메뉴)
+
+    월화수목금
+    월화수목금
+    월화수목금
+    월화수목금
+
+    //변수20
+   
+    1차원배열 4개 사용해서 점심메뉴 저장
+    2차원배열 1개 사용해서 점심메뉴 저장
+
+
+//prompt 
+
+    첫번째 주 선택
+    요일을 선택
+    => 메뉴가 출력될 수 있도록 하는 프로그램
+    <script>
+
+        let week1 = ["피자","파스타","탕수육","마라탕","라면"];
+        let week2 = ["볶음밥", "햄버거","돈가스","쫄면","수제비"];
+        let week3 = ["김밥", "우동", " 카레","냉면","칼국수"];
+        let week4 = ["짬뽕", "짜장면","마라샹궈","순대국밥","부대찌개"];
+
+        let week = parseInt(prompt("주차를 선택하세요",""));
+        let day = parseInt(prompt("요일을 선택하세요",""));
+        let menu;
+        let day2;
+
+        if (week==1){
+            switch(day){
+                case 0:
+                    menu=week1[0];
+                    day2="월요일";
+                    break;
+                case 1:
+                    menu=week1[1];
+                    day2="화요일";
+                    break;
+                case 2:
+                    menu=week1[2];
+                    day="수요일";
+                    break;
+                case 3:
+                    menu=week1[3];
+                    day="목요일";
+                    break;   
+                case 4:
+                    menu=week1[4];
+                    day="금요일";
+                    break;
+
+            }
+
+        }
+        else if(week==2){
+            switch(day){
+                case 0:
+                    menu=week2[0];
+                    day2="월요일";
+                    break;
+                case 1:
+                    menu=week2[1];
+                    day2="화요일";
+                    break;
+                case 2:
+                    menu=week2[2];
+                    day="수요일";
+                    break;
+                case 3:
+                    menu=week2[3];
+                    day="목요일";
+                    break;   
+                case 4:
+                    menu=week2[4];
+                    day="금요일";
+                    break;
+
+            }
+        }else if(week==3){
+            switch(day){
+                case 0:
+                    menu=week3[0];
+                    day2="월요일";
+                    break;
+                case 1:
+                    menu=week3[1];
+                    day2="화요일";
+                    break;
+                case 2:
+                    menu=week3[2];
+                    day="수요일";
+                    break;
+                case 3:
+                    menu=week3[3];
+                    day="목요일";
+                    break;   
+                case 4:
+                    menu=week3[4];
+                    day="금요일";
+                    break;
+
+            }
+        }else if(week==4){
+            switch(day){
+                case 0:
+                    menu=week4[0];
+                    day2="월요일";
+                    break;
+                case 1:
+                    menu=week4[1];
+                    day2="화요일";
+                    break;
+                case 2:
+                    menu=week4[2];
+                    day="수요일";
+                    break;
+                case 3:
+                    menu=week4[3];
+                    day="목요일";
+                    break;   
+                case 4:
+                    menu=week4[4];
+                    day="금요일";
+                    break;
+
+            }
+        }
+        alert(week+"주차 "+day+"의 메뉴는 "+menu+"입니다");
+        
+
+        
+
+    </script>
+</body>
+</html>

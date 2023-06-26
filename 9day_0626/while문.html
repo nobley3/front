@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        //안녕인사 3번
+
+/*  
+        alert("hi");
+        alert("hi");
+        alert("hi");
+*/
+
+ /*  반복문으로 변경, 변수가 필요함=> 반복을 제어할 수 있는 변수가 필요함 */
+
+        //반복문의 횟수가 정해질 때
+        for(let i=1;i<=3;i++){
+            alert("hi"); //초기식 한 번, 조건식, 만족하면 코드수행(블럭안의 코드), 증감식
+        }
+
+        //반복의 횟수가 정해지지 않은 경우
+        /*
+        let n=1;
+        while(n<=3){                // n=1  hi 
+            alert("hi");            // n=2  hi
+            n++;                    // n=3  hi
+        }                           // n=4  (false)
+        */
+
+        let n2=1; 
+        while(n2++ <=3){            // n++    n
+            alert('hi');            //  1     n=2    "hi"
+        }                           //  2     n=3    "hi"
+                                    //  3     n=4    "hi"
+                                    //  4     n=5     false
+
+    </script>
+</body>
+</html>
