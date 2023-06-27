@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let dealer =  Math.floor(Math.random()*100)+1;
+        let answer_a, answer_b, answer_c ; 
+        while(true){
+            let a = Math.floor(Math.random()*100)+1;
+            let b = Math.floor(Math.random()*100)+1;
+            let c = Math.floor(Math.random()*100)+1;
+
+            // 만약 a랑 c가 둘 다 정답이면 ?? 
+            if(a == dealer || b == dealer || c == dealer){
+                if(a==dealer){
+                    answer_a = "a";                   
+                }                                     
+                if(b==dealer){
+                    answer_b = "b";
+                }
+                if(c==dealer){
+                    answer_c ="c";
+                }
+                break;
+            }
+        }
+
+        let user = prompt("a,b,c 중에 고르세요.");
+
+        if(user == answer_a || user == answer_b || user == answer_c){
+            alert("정답입니다");
+        }else{
+            alert("틀렸습니다");
+        }
+    
+    </script>
+    
+
+</body>
+</html>

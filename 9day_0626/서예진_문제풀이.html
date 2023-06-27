@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+문제1
+
+let score = prompt("점수를 입력하세요")
+
+if(score>=90){
+        grade=("A");
+    }else if(score>=80){
+        grade=("B");
+    }else{
+        grade="F";
+    }
+    alert(grade);
+
+
+문제2
+
+ for(i=0; i<3;i++){
+            let score = prompt("점수를 입력하세요");
+            if(score>=90){
+                    grade=("A");
+                }else if(score>=80){
+                    grade=("B");
+                }else{
+                    grade="F";
+                }
+                alert(grade);
+        }
+        
+
+문제3
+
+while(true){
+            let score = prompt("점수를 입력하세요")
+                if(score>=90){
+                        grade=("A");
+                    }
+                else if(score>=80){
+                        grade=("B");
+                    } 
+                else if(score<0){
+                        break;
+                    }
+                else{
+                        grade=("F");
+                    }
+                    alert(grade);
+               
+               
+        }
+       
+문제4
+
+for(i=0;i<9;i++){   
+                
+    document.write((i+1)*2);
+
+ }
+
+ 문제5
+
+ for(var i=2;i<=5;i++){
+        for(var j=1;j<=9;j++){
+            document.write(i+"*"+j+"="+i*j+"<br>");
+        }
+       
+    }
+
+ 문제6-1
+ 
+ let star = "*"
+        document.write(star+"<br>");
+
+문제6-2
+
+ let i=0
+        
+        for(i=0;i<5;i++){
+            document.write("*");
+        }
+
+문제6-3
+
+for(let i=0;i<3;i++){
+            for(let j=0;j<5;j++){
+                document.write("*");
+            }
+            document.write("<br>")
+        }
+
+
+ 문제6-4
+ 
+ for(let i=1;i<=3;i++){
+            for(let j=0;j<i;j++){
+                document.write("*");
+            }
+            document.write("<br>")
+        }
+
+
+
+문제6-5
+for(var i=3;i>=1;i--){
+            for(var j=i; j>0;j--){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+ 문제7
+ 
+ let i=2
+        while(i<=9){
+            let j=1
+            while(j<=9){
+                document.write(i+"*"+j+"="+i*j+"<br>");
+                j++;
+            }
+            i++
+            document.write("<br>");
+        }
+
+문제7-2
+
+let i=2;
+        let j=1;
+        do{
+           while(j<=9){
+            document.write(i+"*"+j+"="+i*j+"<br>");
+            j++;
+           }
+           document.write("<br>");
+           i++;
+           j=1;
+        }while(i<=9);
+
+    </script>
+</body>
+</html>
