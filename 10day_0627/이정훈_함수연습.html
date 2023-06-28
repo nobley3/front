@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+/*
+// 별찍기
+    let s = prompt("별의 갯수를 적어주세요.");
+    star(s);
+
+    function star(j){
+        for(let i=1; i<=j; i++){
+            document.write("*<br>");
+        }
+    }
+*/
+    
+    //곱셈기
+    let a=prompt("숫자를 입력해주세요.");
+    let b=prompt("숫자를 입력해주세요.");
+
+    let p = multi(a,b);
+    let q = adder(a,b);
+    let r = divison(a,b);
+    let s = subt(a,b);
+
+    alert("두 수의 곱셈은"+ p + "입니다.");
+    alert("두 수의 합셈은"+ q + "입니다.");
+    alert("두 수의 나눗셈은"+ r + "입니다.");
+    alert("두 수의 뺄셈은"+ s + "입니다.");
+
+
+    function multi(i,j){
+        let mul = i * j;
+        a=parseInt(a);
+        b=parseInt(b);
+        return mul;
+    }
+    function adder(i,j){
+        let  sum = i + j;
+        a=parseInt(a);
+        b=parseInt(b);
+        return sum;
+    }
+    function divison(i,j){
+        let div = i % j;
+        a=parseInt(a);
+        b=parseInt(b);
+        return div;
+    }
+    function subt(i,j){
+        let sub = i - j;
+        a=parseInt(a);
+        b=parseInt(b);
+        return sub;
+    }
+
+
+    </script>
+</body>
+</html>

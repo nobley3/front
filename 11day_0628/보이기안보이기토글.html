@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!--보이기 / 안보이기 토글 버튼-->
+    <button onclick="toggle()">보이기</button>
+
+    <div id="content">
+        내용입니다.
+    </div>
+
+    <script>
+                          //true: 보이기, false: 안보이기
+        //전역변수         //flag라는 변수 사용하겠다 => 보이기/감추기 정보를 저장할 변수
+                          //스위치변수, flag변수
+        let flag = true;  // true <=> false 
+        function toggle(){
+         let contentE = document.getElementById("content");
+         if(flag==true){//보이기를 해야하는 상황
+            //alert(contentE);
+            contentE.style.display="block";
+            //flag 변수값을 변화시켜야 함
+            flag=false;
+        }else{
+            contentE.style.display="none";
+            // flag변수값을 변화시켜야 함
+            flag=true;
+        }
+
+        }
+
+
+
+            //순서
+            //alert("a;lfkajf");
+            //숨김하고 싶은 대상(태그, 요소, element) 선택
+            // documen. getElementById("id이름");
+            //속성변경, style속성변경
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!--<button onclick="alert('hi')">보이기</button>-->
+    <button onclick="show()">보이기</button>
+    <button onclick="hide()">안보이기</button>
+
+    <div class="wrap" id="content">
+        내용입니다.
+    </div>
+<!--문서 내용의 끝-->
+
+    <script>
+
+        //보이기 버튼이 클릭되면 div안의 내용 보이기
+
+        //선택, dom을 여러가지 방법으로 선택
+        //이벤트 처리하기
+
+        //안보이기 버튼이 클릭되면 div안의 내용 안보이기
+        // 핸들러 : 이벤트를 처리하는 것
+        function show(){
+           // alert("hi");
+          let contentE =  document.getElementById("content"); // 객체 
+          //alert(contentE);
+          contentE.style.display="block";
+
+
+
+          //div 태그 사이의 내용을 가져올 때 사용하는 속성 : innerHTML
+         //let contenValue = contentE.innerHTML;
+         //alert(contenValue);
+
+        }
+
+
+            function hide(){
+                let contentE  =  document.getElementById("content");
+                contentE.style.display="none";
+            }
+    </script>
+</body>
+</html>
