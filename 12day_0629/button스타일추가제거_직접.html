@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  
+</head>
+<body>
+    
+    <div id="mybtn">버튼</div>
+
+    <button onclick="style1()">스타일1</button>
+    <button onclick="style2()">스타일2</button>
+
+    <script>
+
+        function style1(){
+
+          let mybtn =  document.getElementById("mybtn");
+
+          mybtn.style.width="100px";
+          mybtn.style.height="50px";
+          mybtn.style.backgroundColor="green";
+
+        }
+
+
+        function style2(){
+            let mybtn =  document.getElementById("mybtn");
+            mybtn.style.width="100px";
+            mybtn.style.height="50px";
+            mybtn.style.backgroundImage="url('https://item.kakaocdn.net/do/dc9561970173c28a13654c3f14180b4b617ea012db208c18f6e83b1a90a7baa7')";
+            mybtn.style.backgroundSize="cover";
+            mybtn.style.backgroundPosition="center";
+        }
+    </script>
+</body>
+</html>
