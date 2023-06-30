@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function Hello(f){
+            f();
+        }
+
+        function a(){
+            alert("안녕안녕");
+        }
+        function b(){
+            alert("큰일나버렷어!");
+        }
+
+        Hello(a);
+        Hello(b);
+
+ 
+        setTimeout(a, 2000);
+
+        function day(f,g,h){
+            f();
+            g();
+            h();
+        }
+
+
+        function c(){
+            document.write("오늘 아침은...");
+        }
+        function d(){
+            alert("없어!");
+        }
+
+        day(a,c,d);
+
+
+    </script>
+</body>
+</html>

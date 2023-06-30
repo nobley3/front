@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <!--태그에 직접 리스너 작성하는 법-->
+        <li onclick="func1()">aaa</li>
+    </ul>
+
+    <ul>
+        <li id="li1">bbb</li>
+    </ul>
+
+    <script>
+        //함수
+        function func1(){
+            alert("li");
+        }
+
+        //동적으로 이벤트 처리하는 방법
+       let li1= document.getElementById("li1");
+                            // 이벤트 이름(click)
+       li1.addEventListener("click", func2 ); //콜백함수, 1.함수를 작성한다, 함수의 이름을 적는다
+                                                         //2.함수를 익명으로 작성한다.
+
+       function func2(){
+        alert("li event");
+       }                  
+       
+       //이벤트 : 사건  click,  focus, blur, keyup
+       //이벤트리스너(감지하는것) : onclick, onfocus, 
+       //이벤트핸들러 : 위의 func2함수 => 이벤트핸들러 역할을 한다
+       //이벤트소스(객체) : 이벤트발생정보를 담은 객체 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function callback(back){
+            //alert("2초후에 실행됩니다");
+            back();
+        }
+
+        function popup(){
+            alert("시작합니다");
+        }
+
+         function popup2(){
+            alert("종료합니다");
+         }   
+
+         callback(popup);
+         callback(popup2);
+
+         setTimeout(popup2,2000);
+
+    </script>
+
+</body>
+</html>
