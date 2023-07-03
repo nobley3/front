@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .gallery_wrap{
+            width: 500px;
+            height: 500px;
+            
+            margin: 0 auto;
+            position: relative;
+        }
+        .gallery{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            background-image: url("img/펭수1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .left_btn{
+            color: yellow;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            border-radius: 50px;
+        }
+        .left_btn:hover{
+            background-color: powderblue;
+            transition: 0.5s;
+        }
+        .right_btn{
+            color: yellow;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            border-radius: 50px;
+            
+        }
+        .right_btn:hover{
+            background-color: lightcoral;
+            transition: 0.5s;
+        }
+        .btn{
+            width: 50px;
+            height: 50px;
+            
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+    <script>
+
+        let img=["img/펭수1.jpg","img/펭수2.jpg","img/펭수3.jpeg","img/펭수4.jpg"];
+        let i=0;
+        function nextimg(){
+
+            i++
+            if(i>=img.length){
+                i=0;
+            }
+          let gallery = document.querySelector(".gallery");
+          gallery.innerHTML=""
+          gallery.style.backgroundImage="url('"+img[i]+"')";   /* "+ +" */
+          gallery.style.backgroundSize="cover";
+          gallery.style.backgroundPosition="center";
+          
+
+        }
+
+       
+            function preImg(){
+                let gallery = document.querySelector(".gallery");
+                gallery.innerHTML="";
+                i--;
+                if(i<0){
+                    i=img.length-1;
+        
+                }
+                gallery.style.backgroundImage="url('"+img[i]+"')"; 
+                 gallery.style.backgroundSize="cover";
+                 gallery.style.backgroundPosition="center";
+            }
+
+    </script>
+</head>
+<body>
+    <div class="gallery_wrap">
+        <div class="gallery"></div>
+        <div class="left_btn btn" onclick="preImg()"><<</div>
+        <div class="right_btn btn" onclick="nextimg()">>></div>
+
+    </div>
+</body>
+</html>
