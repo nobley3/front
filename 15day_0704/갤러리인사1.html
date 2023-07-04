@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+//let msg=["여름이 왔네요 ","이제 프론트 프로젝트 시작 며칠전!! "," 밖은 덥지만 에이콘은 시원해요"," 여기가 천국"];
+
+//windo.addEventListener("load",function(){});
+        
+        let msg=[];
+        window.addEventListener("load",function(){
+            let slide_items = document.querySelectorAll(".slide-item");
+
+          let msg1 =  slide_items[0].innerHTML;
+          let msg2 =  slide_items[1].innerHTML;
+          let msg3 =  slide_items[2].innerHTML;
+          let msg4 =  slide_items[3].innerHTML;
+
+          console.log(msg1);
+          console.log(msg2);
+          console.log(msg3);
+          console.log(msg4);
+
+          msg[0]=msg1;
+          msg[1]=msg2;
+          msg[2]=msg3;
+          msg[3]=msg4;
+
+          console.log(msg);
+           
+           /* for(let i=0;i<slide_items.length;i++){
+              let slide_item =  slide_items[i];
+              alert(slide_item.innerHTML);
+              msg[i]=slide_item.innerHTML;
+            }
+            */
+            console.log(msg);
+        });
+    
+
+        </script>
+
+</head>
+<body>
+    <div class="gallery_wrap">
+        <div class="slide">
+            <div class="slide-item">여름이 왔네요</div>
+            <div class="slide-item">이제 프론트 프로젝트 시작 하루전!!</div>
+            <div class="slide-item">밖은 덥지만 에이콘은 시원해요</div>
+            <div class="slide-item">여기가 천국</div>
+        </div>
+           
+    </div>
+
+   
+    
+</body>
+</html>

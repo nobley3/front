@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let snacks = ["고래밥","새우깡","콘칩","스윙칩"];
+
+       let result = JSON.stringify(snacks);
+       // ["고래밥","새우깡","콘칩","스윙칩"]
+
+       let str  ='["고래밥","새우깡","콘칩","스윙칩"]';
+
+       console.log(result);
+       console.log(snacks);
+
+       
+       localStorage.setItem("snacks",result);
+
+       let sSearchs = localStorage.getItem("snacks");
+       console.log(sSearchs);
+
+       let oSearchs= JSON.parse(sSearchs);
+
+
+       console.log( oSearchs);
+
+    </script>
+</body>
+</html>

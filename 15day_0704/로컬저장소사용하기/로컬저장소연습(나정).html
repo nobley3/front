@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let musicArr = ["Steal The Show", "I AM","퀸카","이브, 프시케 그리고 푸른 수염의 아내","Spicy","Kistch"];
+        // 배열에 일단 노래 목록 저장
+        let musicStr = JSON.stringify( musicArr);
+        // 배열을 문자열로 변환해줌.(저장소는 문자열만 저장할 수 있기 때문)
+        console.log( musicArr);
+
+
+        localStorage.setItem("key",musicStr);
+        // 저장소에 문자열을 저장해준다 
+        let musicResult = localStorage.getItem("key");
+        // 저장소에서 문자열을 꺼낸다.
+        console.log(musicResult);
+
+        let musicArrNew  = JSON.parse(musicResult);
+        // 꺼내온 문자열을 배열로 변환해준다. (음악을 추가하기 위해서는 배열이 필요하기 때문)
+        musicArrNew.push("Hype Boy"); 
+        musicArrNew.push("헤어지자 말해요");
+        musicArrNew.push("UNFORGIBEN");
+
+        let sMusic = JSON.stringify(musicArrNew);
+        // 배열을 문자열로 변환해준다.
+        console.log(sMusic);
+        
+        localStorage.setItem("key",sMusic);
+        // 저장소에 저장해준다.
+        musicResult = localStorage.getItem("key");
+        // 저장소에서 꺼내와 결과 확인
+        console.log(musicResult);
+
+
+        
+
+
+    </script>
+</body>
+</html>
