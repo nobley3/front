@@ -50,10 +50,10 @@
     // 대상이 있는 요소에 이벤트 추가해야 한다   //  자동으로 event객체를 제공받음 !!!!
     wrap.addEventListener("click", function(event) {
         console.log(  event)
-    if (event.target.tagName === "BUTTON") {
-        event.target.parentElement.remove();   // 대상의 부모 찾아서 삭제하기
-       alert("아이템이 삭제되었습니다.");        //
-    }
+        if (event.target.tagName === "BUTTON") {
+            event.target.parentElement.remove();   // 대상의 부모 찾아서 삭제하기
+        alert("아이템이 삭제되었습니다.");        //
+        }
     });
 
 
