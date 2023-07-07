@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+
+            let  i=-1;
+            function btn(){
+                let beverages = ["블랙밀크티","자몽그린티","망고요구르트","초콜렛밀크티","타로밀크티"];
+
+                i++;
+                if(i>=beverages.length){
+                    i=0;
+                }
+            
+
+                let content = document.getElementById("content");
+                // alert(content);
+
+                let str  =   beverages[i];
+
+                content.innerHTML=str;
+            
+
+         
+         
+        }
+    
+       
+
+
+        
+
+    </script>
+</head>
+<body>
+    <button onclick="btn()">click</button>
+    <div id="content"></div>
+</body>
+</html>

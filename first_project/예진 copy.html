@@ -10,7 +10,7 @@
         *{
             padding: 0px;
             margin: 0px;
-           
+            list-style: none;
         }
         /*
         .header{
@@ -22,26 +22,21 @@
             width: 2560px;
             height: 850px;
             float: left;
-           position: relative;
+            position: relative;
             text-align: center;
-            
         }
-
         .yj_slide{
             display: flex;
             overflow: hidden;
-           
         }
         .yj_slide-item{
-          list-style: none;
-          float: left;
-          transition: 5s;
-          
+            list-style: none;
+            float: left;
+            transition: 5s;
         }
         .yj_slide-item img{
             width: 2560px;
         }
-        
         .yj_btn_prev{
             background-image: url("https://www.gong-cha.co.kr/view/gongcha/images/common/prev.png");
             width: 27px;
@@ -49,9 +44,7 @@
             position: absolute;
             left: 680px;
             top: 398px;
-           
         }
-
         .yj_btn_next{
             background-image: url("https://www.gong-cha.co.kr/view/gongcha/images/common/next.png");
             position: absolute;
@@ -70,7 +63,6 @@
             border: 1px solid #cf3e58;
             background-color: #cf3e58;
             margin: 0 -600px 0 0;;
-            
         }
         .btn_brandstory span{
             color: #fff;
@@ -78,8 +70,6 @@
             font-weight: 700;
             font-size: 15px;
             line-height: 48px;
-           
-            
         }
         .btn2_brandstory{
             background-image: url("https://www.gong-cha.co.kr/view/gongcha/images/common/btn_arr_w.png");
@@ -89,7 +79,6 @@
             position: absolute;
             bottom: 21px;
             right: 55px;
-            
         }
  /*
         .section2{
@@ -112,65 +101,65 @@
 
             .hide{
                 display: none;
-}
-
+            }
     </style>
     <script>
+        let liimgs = ["https://www.gong-cha.co.kr/uploads/board/20230626/3G6ceq2zDpyhkNdJ_20230626.jpg","https://www.gong-cha.co.kr/uploads/board/20230707/Aj4wYuB0gPZvEaGQ_20230707.jpg","https://www.gong-cha.co.kr/uploads/board/20230502/0nGiMx8vBpUXFkJh_20230502.jpg","https://www.gong-cha.co.kr/uploads/board/20230112/pqL7s1dwA0QYTRgM_20230112.jpg"];
 
-        let  liimgs = ["https://www.gong-cha.co.kr/uploads/board/20230626/3G6ceq2zDpyhkNdJ_20230626.jpg","https://www.gong-cha.co.kr/uploads/board/20230627/326NpvCeAJF9dT7y_20230627.jpg","https://www.gong-cha.co.kr/uploads/board/20230502/0nGiMx8vBpUXFkJh_20230502.jpg","https://www.gong-cha.co.kr/uploads/board/20230112/pqL7s1dwA0QYTRgM_20230112.jpg"];
+        let as = ["https://www.gong-cha.co.kr/brand/menu/new.php","https://gong-cha-event.co.kr/obsidian","http://www.gong-cha.co.kr/brand/menu/product.php?c=001002","#"];
 
-      
-        let  as = ["https://www.gong-cha.co.kr/brand/menu/new.php","https://www.gong-cha.co.kr/brand/board/view.php?b=event&n=45995&status=end&page=1","http://www.gong-cha.co.kr/brand/menu/product.php?c=001002","#"];
-
-
-        let i=0;
+        let i = 0;
         
-        function yj_btn_next(){
+        function yj_btn_next(){ // 버튼을 누르면 다음 사진으로 넘어가는 기능
             i++;
             if(i>=liimgs.length){
                 i=0;
+            let detailSpan  =  document.querySelector('.btn_brandstory');
+                detailSpan.classList.remove("hide");
+            }else if(i==3){
+                let detailSpan = document.querySelector('.btn_brandstory');
+                detailSpan.classList.add("hide");
             }
-
-         let slide = document.querySelector('.yj_slide-item');
-         let  img =   slide.querySelector("img");
-         let link  =  document.querySelector(".btn_brandstory");
-
-
-         let nextImg =liimgs[i] ; 
-         let nextlink = as[i];
-         
-         img.src=nextImg;
-         link.href=nextlink;
-         //alert(i)
-
-         if( i==3){
-           let detailSapn  =  document.querySelector('.btn_brandstory');
-           //alert(detailSapn);
-           detailSapn.classList.add("hide");
-         }
-
-
-
-
-        }
-
-        function yj_btn_prev(){
             
-            i--;
             let slide = document.querySelector('.yj_slide-item');
             let img = slide.querySelector("img");
-            let prevImg = liimgs[i] ; 
+            let link = document.querySelector(".btn_brandstory");
 
-            if(i<0){
-                i=liimgs.length-1;
-            }
-            
-            img.src=prevImg;
-           
+            let nextImg = liimgs[i] ; 
+            let nextlink = as[i];
+         
+            img.src = nextImg;
+            link.href = nextlink;
+
         }
 
-        
+        function yj_btn_prev(){ // 버튼을 누르면 이전 사진으로 넘어가는 기능
+            i--;
+            if(i<0){
+                i=liimgs.length-1;
+                let detailSpan = document.querySelector('.btn_brandstory');
+               
+            }if(i==3){
+                let detailSpan = document.querySelector('.btn_brandstory');
+                detailSpan.classList.add("hide");
+            }else{
+                let detailSpan = document.querySelector('.btn_brandstory');
+                detailSpan.classList.remove("hide");
+            }
 
+            let slide = document.querySelector('.yj_slide-item');
+            let img = slide.querySelector("img");
+            let link = document.querySelector(".btn_brandstory");
+
+            let prevImg = liimgs[i] ;
+            let prevlink = as[i];
+
+            img.src = prevImg;
+            link.href = prevlink;
+                   
+
+           
+        }
     </script>
     
 </head>
