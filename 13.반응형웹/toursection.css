@@ -1,0 +1,615 @@
+section {
+    width: 100%;
+    height: auto;
+    /* min-height: 100vh; */
+    /* height: 4416.8px;  */
+    border: 1px solid black;
+    /* box-sizing: border-box; */
+}
+
+ 
+ 
+/* 메인 슬라이드 */
+
+.slideboxWrap {
+    /* border: 1px solid purple; */
+    height: 790px;
+     
+    
+}
+/* .slideShow{
+    border: 1px solid darkturquoise;
+    height: 100%;
+} */
+.mainSlideBox {
+    background: rgb(255, 244, 197);
+    padding: 140px 0 0;
+    position: relative;
+    /* overflow: hidden; */
+    /* border: 1px solid red; */
+    transition: all .5s;
+    width: 100%;
+    height: 500px;
+    
+
+}
+
+.slideTitle{
+   margin: 90px 0 0;
+   /* border: 1px solid red; */
+    
+}
+.slideTitle a{
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    color: #333;
+}
+.slideTitle em{
+    display: inline-block;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 28px;
+    color: #fff;
+    background: #000;
+    border-radius: 15px 15px 15px 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+.slideTitle strong{
+    display: block;
+    margin: 50px 0 23px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -3px;
+    color: #333;
+    /* overflow: hidden; */
+    max-height: 150px;
+    display: -webkit-box;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.textBox{
+    width: 370px;
+    /* margin: 0; */
+    position: relative;
+    overflow: hidden;
+    
+    padding: 0;
+    z-index: 1;
+    border: 1px solid black;
+    margin-left: 480px;
+
+}
+.textBox ul{
+    display: flex;
+    list-style: none;
+}
+
+/* 이미지 슬라이드 */
+.slideImgs{
+    margin-top: -340px;
+    /* border: 1px solid black; */
+    position: relative;
+    width: 54%;
+    padding-left: 80px;
+    float: right;
+    
+     
+}
+.imgslideWrap{
+    border: 1px solid red;
+}
+.imgBox{
+    position: static;
+    padding: 20px 0 80px 20px;
+    /* border: 1px solid red; */
+     
+}
+.imgList{
+    margin-right: 30px;
+    margin: 0 auto;
+    position: relative;
+    /* overflow: hidden; */
+    list-style: none;
+    padding: 0;
+    padding-left: 80px;
+
+}
+.imgList img{
+    /* max-width: 100%; */
+    border-radius: 5px;
+    /* border: 0 none; */
+    /* vertical-align: middle; */
+     
+}
+ /* 슬라이드 페이지 */
+
+ .pageBoxWrap{
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+    width: 940px;
+    bottom: 230px;
+    z-index: 5;
+    border: 1px solid black;
+ }
+ .pageBox{
+    width: 370px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+ }
+ /* 슬라이드바 */
+ .pageNum{
+    position: relative;
+    width: 150px;
+    display: inline-block;
+    z-index: 1;
+    height: 2px;
+ }
+ .slidebar{
+    position: absolute;
+    height: 2px;
+    background: #b2b2b2;
+    width: auto;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+ /* 슬라이드 번호 */
+ .paging{
+    /* position: static; */
+    width: auto;
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    font-weight: 300;
+    margin-left: 10px;
+     
+ }
+ .firstNum{
+    font-weight: 800;
+ }
+ /* 슬라이드 버튼 */
+ .btnBox{
+    
+    position: absolute;
+    right: 0;
+    top: 33px;
+    width: 105px;
+    text-align: center;
+     
+ }
+ .btnpreNum, .btnnexNum{
+    
+    text-indent: -9999px;
+    top: 0;
+    margin: 0;
+    width: 17px;
+    height: 16px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/main/btn_showcase_arw.png) no-repeat;
+    
+ }
+ .btnnexNum{
+    background-position: 0 -16px;
+    position: absolute;
+    right: 10px;
+    left: auto;
+   
+ }
+ .btnpreNum{
+    position: absolute;
+    left: 10px;
+    right: auto;
+ }
+ .btnAuto{
+    
+    position: absolute;
+    right: 0;
+    top: -6px;
+    height: 11px;
+    z-index: 10;
+ }
+ .btnPlay{
+     
+    position: absolute;
+    left: -58px;
+    top: 8px;
+    border: none;
+    display: inline-block;
+    overflow: hidden;
+    display: none;
+    width: 15px;
+    height: 17px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/main/btn_slide_play02.png) no-repeat;
+    text-indent: -9999px;
+    vertical-align: top;
+ }
+ .btnStop{
+    position: absolute;
+    left: -58px;
+    top: 8px;
+    flex: 1;
+    border: 0 none;
+    overflow: hidden;
+    display: inline-block;
+     /* display: none; */
+    width: 15px;
+    height: 17px;
+    background: url( 	https://korean.visitkorea.or.kr/resources/images/main/btn_slidem_stop02.png) no-repeat;
+    text-indent: -9999px;
+    vertical-align: top;
+ }
+
+ /* 메인컨텐츠 */
+ .mainContentsBox{
+    width: 100%;
+    padding: 0 !important;
+    
+    /* border: 1px solid darkblue; */
+ }
+ .mainContentsBox div{
+    box-sizing: border-box;
+ }
+ /* 핫플콕콕 */
+ .kokBox{
+    position: relative;
+ }
+ .kokBox > h2{
+    width: 940px;
+    margin: 0 auto 0;
+   
+ }
+ .kokBox > h2 >a{
+    text-indent: -9999px;
+    display: block;
+    height: 66px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/main/tit_curation_area.png) no-repeat;
+ }
+ .contentWrap{
+    width: 940px;
+    margin: 0 auto;
+    border: 1px solid darkblue;
+ }
+.tabBar{
+    position: relative;
+    display: flex;
+    text-align: center;
+    background: #567ff2;
+    border-radius: 5px;
+    box-shadow: 8px 7px 29px 0px rgba(69, 111, 228, 0.25);
+}
+.tabBar > li{
+    flex-grow: 1;
+    width: 33.3%;
+    list-style: none;  
+}
+.tabBar a{
+    text-decoration: none;
+    display:block;
+    height:50px;
+    text-indent: -9999px;
+    position: relative;
+}
+.menu1 a{
+    background: url(https://korean.visitkorea.or.kr/resources/images/main/menu_curation_area1.png)50% -50px no-repeat;
+}
+.menu2 a{
+    background: url(https://korean.visitkorea.or.kr/resources/images/main/menu_curation_area2.png)50% -50px no-repeat;
+}
+.menu1Contents{
+    padding: 25px 0 0;
+    color: #333;
+}
+.menu1Contents p::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    vertical-align: -4px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/main/icon_curation_txt.png) no-repeat;
+}
+.menu1Contents p{
+    padding: 0 0 25px;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+/* 핫플 - 지역 */
+.areaBar{
+    height: 59px;
+    padding: 11px 0 0;
+    border-bottom: 1px solid #e2e3e7;
+    border-top: 1px solid #e2e3e7;
+}
+.areaBar ul{
+    display: flex;
+}
+.areaWrap li{
+    flex-grow: 1;
+    text-align: center;
+    list-style: none;
+}
+.areaWrap button{
+    height: 35px;
+    border-radius: 50px;
+    width: 50px;
+    font-size: 16px;
+    border: none;
+    color: #666;
+    background-color: white;
+}
+.areaWrap button:hover{
+    color:#3f6cea;
+    border:1px solid #3f6cea;
+}
+/* 사진 */
+.hotPoto{
+    overflow: hidden;
+    margin:20px 0 0 -20px;
+    height:281px;
+    border: 1px solid black;
+}
+.hotPoto ul{
+    display: flex;
+    margin: 0 0 30px -20px;
+    
+}
+.hotPoto ul li{
+    overflow: hidden;
+    width: 25%;
+    height: 330px;
+    transition: 0.5s;
+    list-style: none;
+    border: 1px solid black;
+}
+/* 아마 자바스크립트 추가해야함  */
+.hotPoto ul li.on{
+    width: 615px;
+}
+ 
+.hotPoto ul li div{
+    height: 100%;
+    overflow: hidden;
+    margin: 0 0 0 20px;
+    position: relative;
+}
+.hotPoto ul li div::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background-image: linear-gradient(to bottom,transparent,rgba(0,0,0,.6));
+}
+.hotPoto a{
+    height: 100%;
+}
+/* .hotPoto a:focus{
+    outline: 3px solid red;
+} */
+.hotPoto a:hover .kokimgWrap{
+    transform: scale(1);
+}
+.hotPoto strong{
+    z-index: 5;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 50px;
+    /* font-weight: 400; */
+    font-size: 18px;
+    color: #fff;
+    line-height: 21px;
+    letter-spacing: -0.6px;
+}
+ 
+.kokimgWrap{    
+    background-image: url(https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=3a8a16f1-85a0-4b3d-8bce-e12c78b90ee2&mode=progress);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition: all .7s;
+    height: 100%;
+    transform-origin: left; 
+}
+/* 좋아요버튼 */
+
+.likebtn{
+    border: none;
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    width: 31px;
+    height: 31px;
+    text-indent: -9999px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/main/icon_good.png) no-repeat;
+    font-size: 0;
+}
+
+.likebtn.on{
+    background-position:0 -31px;
+}
+
+/* 추천버튼 */
+.recomBox{
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    border: 1px solid black;
+    
+}
+.recomBox button::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    margin-right: 4px;
+    vertical-align: -3px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/main/btn_curation_refresh.png) no-repeat;
+}
+.recomBox button{
+    width: 260px;
+    height: 45px;
+    color: #333;
+    line-height: 19px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    font-size: 1em;
+    margin-top: 35px;
+}
+.recomBox a{
+    line-height: 19px;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    text-decoration: none;
+    color: #333;
+}
+.recomBox a::after{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/main/btn_curation_more.png) no-repeat;
+}
+/* 축제/공연/행사 */
+.eventContentsBox{
+    position: relative;
+    margin: 80px 0 0;
+    border: 1px solid black;
+    height: 300px;
+     
+}
+.eInnerBox{
+     
+    margin: 0 auto;
+    padding: 0 20px 27px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    left: 450px;
+} 
+.eInnerWrap{
+    width: 100%;
+    padding-top: 0;
+     
+}
+.eLeftC{
+    float: left;
+    width: 485px;
+    height: 248px;
+    /* border: 1px solid black; */
+     
+}
+.eLeftC a{
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+}
+.eLeftC img{
+    border-radius: 10px;
+
+}
+.eRightC{
+    
+    /* border: 1px solid red; */
+    width: 455px;
+    height: 248px;
+    float: left;
+    margin-left: 10px;
+}
+.eRightC a{
+    padding: 0 15px 0 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin-top: -5px;
+    height: 38px;
+    color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+   
+}
+.ecTitle{
+    font-weight:800 !important;
+    font-size:22px !important;
+    letter-spacing:-1px;
+    margin-bottom: 8px !important;
+}
+.btnmore{
+    overflow: hidden;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/sub/ico_moreplus.png) 0 0 no-repeat;
+    text-indent: -9999px;
+}
+.eBoard{
+    width: 100%;
+    list-style: none;
+      
+} 
+.eBoard li{
+    border-bottom:1px solid #e6e6e6;
+    padding-top: 15px; 
+     
+}
+.eBoard li:hover a{
+    text-decoration: underline;
+}
+.eBoard li a{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 27px;
+    padding: 0;
+    
+    
+}
+.eBoard li a em{
+    padding-right: 5px;
+    font-weight:bold;
+    font-style: normal;
+}
+.eBoard li:first-child:not(.non){
+    border-top: 0;
+    background: #f0f4f7;
+}
+.eBoard li:first-child:not(.non) a{
+    margin: 0 15px;
+    width: auto;
+}
+.boardtitle{
+    color: #fff;
+    background: #333;
+    height: 24px;
+    line-height: 22px;
+    border-radius: 50px;
+    padding: 0 10px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 8px;
+}

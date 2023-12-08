@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> </title>
+	<style>
+ 
+.parent{
+  display: flex; 
+  flex-direction: row; 
+ }
+.child{
+  /* width: calc(100%/3); */
+  flex: 1; /*1:1:1비율*/
+  border: 1px solid black;
+ }
+@media(max-width:767px){ /*모바일구간, 767px까지*/
+  .parent{
+    flex-direction: column;
+  } 
+}
+
+	</style>
+<body>
+
+	<div class="parent">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+	</div>
+
+</body>
+</html>

@@ -141,11 +141,11 @@
          
          img.src=nextImg;
          link.href=nextlink;
-         alert(i)
+         //alert(i)
 
          if( i==3){
            let detailSapn  =  document.querySelector('.btn_brandstory');
-           alert(detailSapn);
+           //alert(detailSapn);
            detailSapn.classList.add("hide");
          }
 
@@ -157,12 +157,14 @@
         function yj_btn_prev(){
             
             i--;
-            if(i<0){
-                i=liimgs.length-1;
-            }
             let slide = document.querySelector('.yj_slide-item');
             let img = slide.querySelector("img");
             let prevImg = liimgs[i] ; 
+
+            if(i<0){
+                i=liimgs.length-1;
+            }
+            
             img.src=prevImg;
            
         }

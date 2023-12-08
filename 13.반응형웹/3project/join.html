@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="tourheader.css">
+    <link rel="stylesheet" href="join.css">
+    <link rel="stylesheet" href="tourfooter.css">
+</head>
+
+<body>
+    <header id="tourheader"></header>
+
+    <section>
+        <h1>회원정보 입력</h1>
+        <p>회원님의 개인정보를 입력해주시기 바랍니다.</p>
+
+        <div class="joinwrap">
+            <b>회원가입</b>
+            <div class="formwrap">
+                <!-- 아이디 -->
+                <form action="checkId" method="post">
+                    <div class="joinContents">
+                        <label for="userid">아이디</label><br>
+                        <input id="userid" type="text" name="userid" placeholder="아이디 입력">
+                        <button type="button" id="checkId">중복확인</button><br>
+                    </div>
+                    <div id="confirmid"></div>
+                </form>
+
+                <!-- 닉네임 -->
+                <form action="checkNickname" method="post">
+                    <div class="joinContents">
+                    <label for="nickname">닉네임:</label><br>
+                    <input id="nickname" type="text" name="nickname" placeholder="닉네임 입력">
+                    <button type="button" id="checkNickname">중복확인</button><br>
+                 </div>
+                    <div id="confirmnickname"></div>
+                </form>
+
+                <div class="joinContents">
+                    <label for="pw">비밀번호:</label><br>
+                    <input id="pw" type="password" name="pw" placeholder="영문,숫자,특수문자 포함 8자~16자">
+                    <button type="button" id="showPw">비밀번호 표시</button><br>
+                </div>
+                <div class="joinContents">
+                    <label for="checkpw">비밀번호 확인:</label><br>
+                    <input id="checkpw" type="password" name="checkpw" placeholder="비밀번호 재입력">
+                    <button type="button" id="showPw2">비밀번호 표시</button><br>
+                </div>
+                <div id="confirmpw"></div>
+
+                <!-- 회원가입 -->
+                <div>
+                    <button type="button" id="registerButton">가입하기</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer id="tourfooter"></footer>
+    <script>
+        $(function () {
+            $("#tourheader").load("tourheader.html");
+            $("#tourfooter").load("tourfooter.html");
+        });
+    </script>
+</body>
+
+</html>

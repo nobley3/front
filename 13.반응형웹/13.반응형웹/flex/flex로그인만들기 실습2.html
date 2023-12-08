@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbit&display=swap');
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /*보이는 내 화면의 높이 vh : viewport height*/
+        }
+
+        .login{
+            border: 1px solid black;
+            width: 400px;
+            padding: 30px;
+            
+        }
+        .sns-login{
+            display: flex;
+            flex-direction: row;
+        }
+        .btn{
+            flex: 1;
+        }
+        .btn-login{
+            padding: 5px 40px;
+            border: none;
+            border-radius: 3px;
+            color: aliceblue;
+            background-color: brown;
+            margin-top: 20px;
+        }
+        .field{
+            display: flex;
+            flex-direction: row;
+            margin: 10px 0;
+        }
+        .field label {
+            flex: 1;
+        }
+        .field input{
+            flex: 3;
+        }
+
+        .login h2{
+            text-transform: capitalize; /*첫 글자 대문자*/
+        }
+
+        /* 모바일 구간 */
+        @media(max-width:767px){
+           .login{
+            width: 100%;
+           }
+           .sns-login{
+                flex-direction: column;
+            }
+            .field{
+                flex-direction: column;
+            }
+            .btn{
+                margin: 5px 0;
+            }
+            .btn-login{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login">
+        <h2>reservation</h2>
+        <div class="sns-login"><button class="btn kakao">카카오 로그인</button><button class="btn kakao">카카오 로그인</button></div>
+        <div class="field">
+            <label  for="id"   >아이디</label>
+            <input type="text" id="id"  >            
+        </div>
+        <div class="field">
+            <label  for="email"   >이메일</label>
+            <input type="email" id="email"  >            
+        </div>
+        <div class="field">
+            <label  for="pw"    >비밀번호</label>
+            <input type="password" id="pw"   >            
+        </div>
+        <button class="btn-login">로그인</button>
+    </div>
+    
+</body>
+</html>

@@ -6,52 +6,131 @@
     <title>공차 </title>
     <style>
        
+       *{
+        margin: 0px;
+        padding: 0px;
+       }
         .header_wrap{
             width: 100%;
             height: 110px;
             border: 1px solid black;
-            
+            background-color: #ffffff;;
         }
         .header_inner{
             width: 1200px;
             height: 110px;
             border: 1px solid black;
             margin: 0 auto;
-            
+            position: relative;
             
             
         }
         .header_inner img{
             width: 62px;
             height: 81px;
+            position: absolute;
+            top: 10px;
+
         }
         .list {
             display: flex;
+            border: 1px solid red;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+            position: absolute;
+            top: 35px;
             
         }
         .list li{
             list-style: none;
             margin: 5px auto; 
-            
             font-size: 17px;
+            padding-left: 50px;
+            
+           
+            
+        }
+        .list a{
+            text-decoration: none;
+            color: #444444;
+           
+            
+        }
+        .fb{
+            background-image: url("https://www.gong-cha.co.kr/view/gongcha/images/common/btn_f.png");
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+        .ins{
+            background-image: url("https://www.gong-cha.co.kr/view/gongcha/images/common/btn_i.png");
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+        .kkao{
+            background-image: url("https://www.gong-cha.co.kr/view/gongcha/images/common/btn_k.png");
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+        .sns_wrap{
+           display: flex;
+            list-style: none;
+            position: absolute;
+            right: 180px;
+            top: 40px;
+            border: 1px solid black;
+            
+        }
+        .sns_wrap li{
+            padding-left: 20px;
+        }
+        .info{
+            width: 60px;
+            list-style: none;
+            position: absolute;
+            top: 30px;
+            
+            right: 310px;
             
             
+           
+        }
+        .info a{
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 20px;
+            color: #444444;
+            line-height: 40px;
 
         }
+        
     </style>
 </head>
 <body>
     <header>
         <div class="header_wrap">
             <div class="header_inner">
-                <img src="./공차logo.png">
+                <a href="https://www.gong-cha.co.kr/brand/">
+                <img src="./공차logo.png" ></a>
                 <ul class="list">
-                    <li>Brand</li>
-                    <li>Menu</li>
-                    <li>Store</li>
-                    <li>Membership</li>
-                    <li>Benefit</li>
-                    <li>Event&News</li>
+                    <li><a href="">Brand</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Store</a> </li>
+                    <li><a href="">Membership</a></li>
+                    <li><a href="">Benefit</a></li>
+                    <li><a href="">Event&News</a></li>
+                </ul>
+                <ul class="info">
+                    <li><a href="">공지사항</a></li>
+                </ul>
+                <ul class="sns_wrap">
+                    <li class="fb"><a href="https://www.facebook.com/GongCha.Korea"></a></li>
+                    <li class="ins"><a href="https://www.instagram.com/gongcha.official/?hl=ko"></a></li>
+                    <li class="kkao"><a href="https://pf.kakao.com/_Cywfxb"></a></li>
                 </ul>
                 
             </div>

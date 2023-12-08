@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> </title>
+	<style>
+		/* reset css*/
+		a {
+			text-decoration: none;
+		}
+
+		h1,
+		h2,
+		h3 {
+			margin: 0;
+		}
+
+		button {
+			outline: none;
+			cursor: pointer;
+			/*손가락모양 커서*/
+		}
+
+		header {
+			background-color: lightblue;
+			display: flex;
+			padding: 20px;
+		}
+
+		header .logo {
+			flex: 1;
+			border: 1px solid black;
+		}
+
+		header .gnb {
+			flex: 6;
+			display: flex;
+			justify-content: center;
+			border: 1px solid black;
+		}
+
+		header .search {
+			flex: 1;
+			border: 1px solid black;
+			text-align: right;
+		}
+
+		header .gnb a {
+			margin: 0 20px;
+		}
+
+		@media (max-width: 768px) {
+			header {
+				flex-direction: column;
+			}
+
+			.gnb a {
+				margin: 0 5px;
+			}
+
+			.logo {
+				text-align: center;
+				 
+			}
+
+			.search {
+				text-align: center;
+			}
+			.gnb{
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<!--이미지로고 영역-->
+		<div class="logo">
+			<img src="" alt="">이미지로고
+		</div>
+		<!--메인메뉴 영역-->
+		<div class="gnb">
+			<a href="#none">Home</a>
+			<a href="#none">About us</a>
+			<a href="#none">Service</a>
+			<a href="#none">Contact us</a>
+			<a href="#none">Blog</a>
+		</div>
+		<!--검색 영역-->
+		<div class="search">
+			<input type="search" placeholder="Search">
+		</div>
+	</header>
+
+</body>
+
+</html>

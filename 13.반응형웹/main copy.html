@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .logo {
+            flex: 1;
+            line-height: 60px;
+        }
+
+        .menu {
+            flex: 4;
+        }
+
+        .search {
+            flex: 1;
+            line-height: 60px;
+        }
+
+        ul,
+        li {
+            margin: 0px;
+            padding: 0px;
+
+            list-style: none;
+        }
+
+        .header {
+            height: 60px;
+            background-color: aqua;
+            transition: 1s;
+            overflow: hidden;
+        }
+
+        .header:hover {
+
+            height: 300px;
+        }
+
+
+        .row1 {
+            height: 60px;
+            display: flex;
+
+        }
+
+        .row2 {
+            height: 300px;
+            background-color: antiquewhite;
+            /* border: 1px solid black; */
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu>li {
+            flex: 1;
+            height: 60px;
+             
+        }
+
+        .title {
+            display: block;
+            height: 60px;
+            line-height: 60px;
+        }
+ 
+    </style>
+</head>
+
+<body>
+
+    <!--60px-->
+    <div class="header">
+        <!-- 60px-->
+        <div class="row1">
+            <div class="logo">로고</div>
+            <ul class="menu">
+                <li> <a href="#" class="title">메뉴1 </a>
+                    <ul>
+                        <li>하위</li>
+                        <li>하위</li>
+                        <li>하위</li>
+                        <li>하위</li>
+                        <li>하위</li>
+                    </ul>
+                </li>
+                <li class="title">메뉴2</li>
+                <li class="title">메뉴3</li>
+
+            </ul>
+            <div class="search" >검색바</div>
+        </div>
+
+        <!-- 300px-->
+        <div class="row2">
+        </div>
+    </div>
+</body>
+
+</html>

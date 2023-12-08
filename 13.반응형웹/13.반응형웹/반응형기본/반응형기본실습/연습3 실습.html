@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> </title>
+	<style>
+ 
+  .parent{
+    display: flex;
+    flex-direction: row; /*기본값, 생략가능*/
+    justify-content: space-between; /*양끝점 기준으로 균등하게 분할*/
+  }
+  .child{
+    border: 1px solid black;
+  }
+
+  @media(max-width:767px){
+    .parent{
+      flex-direction: column; 
+    }
+    .child:nth-child(1){
+      order: 3;
+    }
+    .child:nth-child(2){
+      order: 2;
+    }
+    .child:nth-child(3){
+      order: 1;
+    }
+    
+  }
+	</style>
+<body>
+
+	<div class="parent">
+		<div class="child">로고</div>
+		<div class="child">메뉴바</div>
+		<div class="child">sns</div>
+	</div>
+
+</body>
+</html>

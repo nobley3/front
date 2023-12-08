@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            width: 100%;
+            height: 90px;
+            border: 1px solid black;
+            background-color: beige;
+            transition: 1s;
+            overflow: hidden;
+        }
+
+        header:hover{
+            height: 360px;
+        }
+        .headerBox {
+            height: 90px;
+            display: flex;
+        }
+        .contentBox {
+            height: 300px;
+            background-color: aquamarine;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .munuwrap {
+            flex: 4;
+            border: 1px solid black;
+
+        }
+
+        .logo {
+            border: 1px solid black;
+            flex: 1;
+        }
+
+        .searchwrap {
+            flex: 1;
+            border: 1px solid black;
+        }
+
+        .menu>li {
+            flex: 1;
+            text-align: center;
+            line-height: 75px;
+            list-style: none;
+        }
+
+        .menuContent>li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headerBox"> <!--row1-->
+            <div class="logo">
+
+            </div>
+            <div class="munuwrap">
+                <ul class="menu">
+                    <li>
+                        <a href="#">홈</a>
+                    </li>
+                    <li> <a href="#">테마</li>
+                    <li><a href="#">지역</li>
+                    <li><a href="#">여행콕콕
+                            <ul class="menuContent">
+                                <li><a href="#">핫플콕콕</li>
+                                <li><a href="#">AI콕콕 플래너</li>
+                            </ul>
+                    </li>
+                    <li><a href="#">여행정보
+                            <ul class="menuContent">
+                                <li><a href="#">여행지</li>
+                                <li><a href="#">여행코스</li>
+                                <li><a href="#">축제</li>
+                                <li><a href="#">공연/행사</li>
+                            </ul>
+                    </li>
+                    <li><a href="#">여행지도</li>
+                </ul>
+            </div>
+            <div class="searchwrap">
+                <input type="text">검색
+            </div>
+        </div>
+        <div class="contentBox"></div>
+    </header>
+</body>
+
+</html>

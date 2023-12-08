@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/455d63028c.js" crossorigin="anonymous"></script>
+    
+    <style>
+        *{
+             margin: 0px;
+             padding: 0px;
+        }
+        .container{
+            margin: 0px auto;
+            width: 1200px;
+           
+            height: 3000px;
+            position: relative;
+        }
+        .sectiontopaTag{
+            margin-bottom: 100px;
+        }
+        section #img1{
+            position: absolute;
+            right: 0px;
+            top: 200px;
+        }
+        #lefth1{
+            margin-bottom: 100px;
+        }
+        section a{
+            text-decoration: none;
+        }
+        section ul{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        section ul li{
+            list-style: none;
+        }
+        section li{
+            
+            border: 1px solid gray;
+           width: 380px;
+           height: 800px;
+           
+        }
+        section .li1{
+        border-bottom: 1px solid gray;
+        padding: 20px;
+        
+      }
+      .liintroduce{
+        padding: 0 25px;
+      }
+      .bot{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+      .bot img {
+        width: 275px;
+        
+      }
+      .box{
+        
+        background-color: black;
+        color: white;
+        position: absolute;
+        top: 10px;
+        width: 85px;
+        height: 30px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 25px;
+      }
+      footer{
+            position: relative;
+            padding: 50px 100px 50px 100px;
+            background-color: rgb(33, 33, 33);
+
+        }
+        a{
+           text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .l_link{
+            
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        .r_text{
+            position: absolute;
+            right: 100px;
+            top: 50px;
+        }
+        .r_text1{
+            color: white;
+        }
+        .r_text2, hr, .min_text{
+            color: rgb(120, 120, 120);
+        }
+        .last_link a{
+            font-size: 15px;
+            margin-right: 30px;
+        }
+        .pointtext{
+            color: rgb(245, 186, 76);
+        }
+        .min_text{
+            margin-left: -30px;
+            margin-top: 30px;
+            font-size: 14px;
+            line-height: 30px;
+        }
+        header img{
+            float: left;
+            width: 220px;
+            height: 40px;
+        
+        }
+        li{
+            list-style: none;
+        }
+        .menu{
+            padding: 20px;
+            font-weight: bold;
+            overflow: hidden;
+            /* border: 1px solid red; */
+        }
+        ul a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+         
+        }
+        #ssub{
+            color: gray;
+            font-size: 12px;
+        }
+        .mainmenu{
+            /* border: 1px solid green; */
+            font-size: 16px;
+            margin-left: 35px;
+            text-align: left;
+           
+        }
+        .menu > li {
+        float: left;
+        line-height: 40px;
+        }
+        .submenu > li {
+        line-height: 45px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        }
+
+        .submenu {
+        margin-top: 25px;
+        height: 0; 
+        overflow: hidden;
+        text-align: left;
+        }
+        
+        .menu:hover {
+       
+        transition-duration: 0.5s;
+        }
+
+        .menu:hover .submenu {
+        height: 330px; 
+        transition-duration: 0.4s;
+        }
+
+         
+        @media screen and (max-width:768px) {
+            .mainmenu{
+                display: none;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    
+        <header>
+        
+            <ul class="menu">
+                <a href="main.html"><img src="./images/twosomelogo.png"></a>
+                <li class="mainmenu"><a href="introduce.html">투썸플레이스 소개</a>
+                    <ul class="submenu">
+                        <li><a href="introduce.html">투썸플레이스</a></li>
+                        <div id="ssub">
+                        <li><a href="introduce.html" style="color: gray;"> 비전체계</a></li>
+                        <li><a href="" style="color: gray;">연혁</a></li>
+                        <li><a href="" style="color: gray;">BI</a></li>
+                        <li><a href="" style="color: gray;">20주년 이야기</a></li>
+                        <li><a href="" style="color: gray;">Recruit</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="mainmenu"><a href="menu.html">메뉴이야기</a>
+                    <ul class="submenu">
+                        <li><a href="menu.html">커피이야기</a></li>
+                        <li><a href="">디저트이야기</a></li>
+                        <li><a href="">델리이야기</a></li>
+                    </ul>
+                </li>
+                <li class="mainmenu"><a href="브랜드지원.html">브랜드 지원</a>
+                    <ul class="submenu">
+                        <li><a href="브랜드지원.html">어썸 페어링 플랜트</a></li>
+                        <li><a href="">어썸 디저트 플랜트</a></li>
+                        <li><a href="">C&D센터</a></li>
+                        <li><a href="">SEP센터</a></li>
+                    </ul>
+                </li>
+                <li class="mainmenu"><a href="">투썸플레이스 앱 & 멤버십</a>
+                    <ul class="submenu">
+                        <li><a href="">투썸플레이스 앱 소개</a></li>
+                        <li><a href="">투썸플레이스 멤버십</a></li>
+                        <div id="ssub">
+                        <li><a href="" style="color: gray;">멤버십 소개</a></li>
+                        <li><a href="" style="color: gray;">등급 및 혜택</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="mainmenu"><a href="">가맹점 창업안내</a>
+                    <ul class="submenu">
+                        <li><a href="">가맹점 개설 안내</a></li>
+                        <li><a href="">창업설명회</a></li>
+                        <li><a href="">온라인 창업상담신청</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">가맹점 전용 금융상품</a></li>
+                    </ul>
+                </li>
+                <li class="mainmenu"><a href="">새소식 & 공지</a>
+                    <ul class="submenu">
+                        <li><a href="">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <div class="container">
+    <section>
+        
+    <div class="sectiontopaTag" style="font-size: 14px;">
+        <a href="main.html" style="color: rgb(105, 105, 105);">홈 </a>
+        •
+        <a href="menu.html" style="color: #d50037; font-weight: bold;">메뉴이야기</a>
+    </div>
+
+    <div class="leftword">
+        <h1 id="lefth1" style="font-size: 60px; ">커피이야기</h1>
+        <h1 style="font-size: 60px; margin-bottom: 30px;">TWOSOME<br>
+        COFFEE STORY</h1>
+        
+        <h2 style="margin-bottom: 30px;">내 취향이 담긴 커피,투썸플레이스에는<br>
+        내 취향을 담아 섬세하기 만든<br>
+            나만의 커피가 있습니다.
+        </h2>
+
+        <p style="color: rgb(105, 105, 105); font-size: 16px; font-weight: bold;">투썸플레이스 큐그레이더(Q-Grader)는 좋은 산지의 신선한<br>
+            원두만을 선별해 각각 다른 개성의 세가지 블렌드를 제공합니다.원두<br>
+            타입별 최적의 밸런스를 맞춘 로스팅 포인트,최상의 에스프레소 추출<br>
+            기술이 더해져 투썸플레이스만의 커피가 완성됩니다.</p>
+    </div>
+     <img src="./images/img_p_coffeestory.jpg" width="500px" alt="" id="img1" >
+    <div class="#" style="margin-bottom: 100px;">
+        <h1 style="margin-top: 300px; margin-bottom: 30px; font-size: 40px; ">투썸의 특별한 블렌드</h1>
+        <ul>
+            <li >
+                <div class="li1">
+                <div><img src="./images/커피모양1.png" alt="" style="padding-top: 10px;"></div>
+                <div style="margin-bottom: 10px; font-size: 25px; font-weight: bold;" >BLACK GROUND</div>
+                <div style="margin-bottom: 50px; font-weight: bold; color: rgb(105, 105, 105);">DARK ROAST</div>
+            </div>
+            <div class="liintroduce">
+                <div class="padding1"></div>
+                <div style="margin-bottom: 20px; margin-top: 40px; font-weight: bold; font-size: 20px;" >블랙그라운드</div>
+                <div style="color: rgb(105, 105, 105); font-weight: bold;">묵직하고 스모키한 첫인상과 입안 가득 꽉 차는 바디감, 다크초콜릿의 달콤쌉싸름한 여운이 매력적인 다크 로스팅 블렌드</div>
+                <div style="margin-top: 30px; font-size: 20px; font-weight: bold; margin-bottom: 10px;">Dark Roast</div>
+                <div><i class="fa-solid fa-check" style="color: red;" ></i> Full-Body</div>
+                <br>
+                <div><i class="fa-solid fa-check" style="color: red;"></i> Nutty</div>
+                <br>
+                <div><i class="fa-solid fa-check" style="color: red; margin-bottom: 20px;"></i> Chocolaty</div>
+                <div style="margin-bottom: 20px;"><span style="color: rgb(105, 105, 105); font-weight: bold; margin-right: 10px;" >산미</span>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: pink; margin-right: 5px;" ></i>
+                    <i class="fa-solid fa-circle" style="color: pink; margin-right: 5px;" ></i>
+                    <i class="fa-solid fa-circle" style="color: pink;" ></i>
+                </div>
+                <div><span style="color: rgb(105, 105, 105); font-weight: bold; margin-right: 10px;">바디</span>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red;"></i>
+                </div>
+            </div>
+            <div style="margin-top: 30px; font-size: 20px; font-weight: bold; margin-bottom: 10px;">Origin</div>
+            <div style="font-size: 15px; color: rgb(105, 105, 105) ; font-weight: bold;">콜롬비아,브라질,에티오피아,콰테말라</div>
+            </li>
+            <li >
+                <div class="li1">
+                <div><img src="./images/커피모양2.png" alt="" style="padding-top: 10px;"></div>
+                <div style="margin-bottom: 10px; font-size: 25px; font-weight: bold;" >AROMA NOTE</div>
+                <div style="margin-bottom: 50px; color: rgb(255, 81, 0); font-weight: bold;">MEDIUM ROAST</div>
+            </div>
+            <div class="liintroduce">
+                <div class="padding1"></div>
+                <div style="margin-bottom: 20px; margin-top: 40px; font-weight: bold; font-size: 20px;" >아로마노트</div>
+                <div style="color: rgb(105, 105, 105); font-weight: bold;">잘 익은 과일향,플로럴한 아로마에 부드럽고 밀도 있는 단맛과 은은한 산미의
+                밸런스가 좋은 미디엄 로스팅 블렌드</div>
+                <div style="margin-top: 30px; font-size: 20px; font-weight: bold; margin-bottom: 10px;">Medium Roast</div>
+                <div><i class="fa-solid fa-check" style="color: red;" ></i> Berry-like</div>
+                <br>
+                <div><i class="fa-solid fa-check" style="color: red;"></i> Juicy</div>
+                <br>
+                <div><i class="fa-solid fa-check" style="color: red; margin-bottom: 20px;"></i> Floral</div>
+                <div style="margin-bottom: 20px;"><span style="color: rgb(105, 105, 105); font-weight: bold; margin-right: 10px;" >산미</span>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: pink;" ></i>
+                </div>
+                <div><span style="color: rgb(105, 105, 105); font-weight: bold; margin-right: 10px;">바디</span>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: pink; margin-right: 5px;" ></i>
+                    <i class="fa-solid fa-circle" style="color: pink;" ></i>
+                </div>
+            </div>
+            <div style="margin-top: 30px; font-size: 20px; font-weight: bold; margin-bottom: 10px;">Origin</div>
+            <div style="font-size: 15px; color: rgb(105, 105, 105) ; font-weight: bold;">에티오피아(Natural), 과테말라</div>
+            </li>
+            <li >
+                <div class="li1">
+                <div><img src="./images/커피모양3.png" alt="" style="padding-top: 10px;"></div>
+                <div style="margin-bottom: 10px; font-size: 25px; font-weight: bold;" >SWP. DECAF</div>
+                <div style="margin-bottom: 50px; font-weight: bold; color: rgba(46, 46, 255, 0.63);">DARK ROAST</div>
+            </div>
+            <div class="liintroduce">
+                <div class="padding1"></div>
+                <div style="margin-bottom: 20px; margin-top: 40px; font-weight: bold; font-size: 20px;" >SWP. 디카페인</div>
+                <div style="color: rgb(105, 105, 105); font-weight: bold;">친환경 방식의 스위스 워터 프로세스로 카페인을 제거하고 견과류의 고소한 풍미는 그대로 남긴 다크 로스팅 블렌드</div>
+                <div style="margin-top: 30px; font-size: 20px; font-weight: bold; margin-bottom: 10px;">Dark Roast</div>
+                <div><i class="fa-solid fa-check" style="color: red;" ></i> Rich</div>
+                <br>
+                <div><i class="fa-solid fa-check" style="color: red;"></i> Sweet</div>
+                <br>
+                <div><i class="fa-solid fa-check" style="color: red; margin-bottom: 20px;"></i> Well-Balanced</div>
+                <div style="margin-bottom: 20px;"><span style="color: rgb(105, 105, 105); font-weight: bold; margin-right: 10px;" >산미</span>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: pink; margin-right: 5px;" ></i>
+                    <i class="fa-solid fa-circle" style="color: pink; margin-right: 5px;" ></i>
+                    <i class="fa-solid fa-circle" style="color: pink;" ></i>
+                </div>
+                <div><span style="color: rgb(105, 105, 105); font-weight: bold; margin-right: 10px;">바디</span>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: red; margin-right: 5px;"></i>
+                    <i class="fa-solid fa-circle" style="color: pink; margin-right: 5px;" ></i>
+                </div>
+            </div>
+            <div style="margin-top: 30px; font-size: 20px; font-weight: bold; margin-bottom: 10px;">Origin</div>
+            <div style="font-size: 15px; color: rgb(105, 105, 105) ; font-weight: bold;">
+                콜롬비아, 브라질   </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sectionbottom">
+        <h1 style="font-size: 40px; margin-bottom: 20px;">시그니처 커피&음료</h1>
+        <div class="bot">
+            <div><div class="box">Espresso</div><img src="./images/img_t_menu01@3x.png" alt="">
+        <div style="font-size:25px; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">스페니쉬 연유 라떼</div>
+        <div style="color: rgb(105, 105, 105); margin-bottom: 20px; font-weight: 600;">Spanish Condensed Milk Café Latte</div>
+        <div style="color: rgb(75, 75, 75); font-weight: bold;">평화로운 유럽 초원의 감성을 담은 부<br>
+            드럽고 달콤한 스페니쉬 연유라떼</div>
+            <br>
+        <div style="width: 270px; font-size: 13px; color: rgb(105, 105, 105); margin-bottom: 20px; font-weight: 600;" >
+            스페니쉬 라떼 : 야외 활동이 많은 스페인 목동들이 피곤함을 해소하기 위해 즐겨 마시던 커피</div>
+        
+
+        </div>
+            <div><div class="box">Espresso</div><img src="./images/img_t_menu02@3x.png" alt="">
+            <div style="font-size:25px; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">롱블랙</div>
+            <div style="color: rgb(105, 105, 105); margin-bottom: 20px; font-weight: 600;">Long Black</div>
+            <div style="color: rgb(75, 75, 75); font-weight: bold;">에스프레소보다 짧게 추출한 리스트레<br>또
+                샷을 넣어 깊은 풍미와 풍부한 크레<br>
+                마를 느낄 수 있는 매력적인 커피</div>
+                <br>
+            <div style="width: 270px; font-size: 13px; color: rgb(105, 105, 105); margin-bottom: 20px; font-weight: 600;" >
+                롱블랙 : 호주와 뉴질랜드를 시작으로 영국 등 유럽에서 즐기는 커피로 아메리카노보다 진한 풍미로 즐기는 커피</div></div>
+            <div><div class="box">Non Coffee</div><img src="./images/img_t_menu03@3x.png" alt="">
+
+
+            <div style="font-size:25px; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">허니 레몬티</div>
+            <div style="color: rgb(105, 105, 105); margin-bottom: 20px; font-weight: 600;">Honey Lemon Tea</div>
+            <div style="color: rgb(75, 75, 75); font-weight: bold;">진한 TWG 프렌치 얼그레이의 향과 달<br>
+                콤한 꿀, 상큼한 레몬이 녹아든 향긋한<br>
+                 티</div>
+                <br>
+            <div style="width: 270px; font-size: 13px; color: rgb(105, 105, 105); margin-bottom: 20px; font-weight: 600;" >
+                </div></div>
+
+
+            <div><div class="box">Non Coffee</div><img src="./images/img_t_menu04@3x.png" alt="">
+            <div style="font-size:25px; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">스트로베리 피치 프라페</div>
+            <div style="color: rgb(105, 105, 105); margin-bottom: 20px; font-weight: 600;">Strawberry Peach Frappe</div>
+            <div style="color: rgb(75, 75, 75); font-weight: bold;">딸기와 복숭아의 상큼함이 조화롭게<br>
+                 어우러져 달콤하고 시원하게 즐길 수<br>
+                  있는 과일 프라페</div>
+                <br>
+            <div style="width: 270px; font-size: 13px; color: rgb(105, 105, 105); margin-bottom: 20px; font-weight: 600;" >
+                </div></div>
+
+
+        </div>
+
+    </div>
+    </section>
+    </div>
+    <footer>
+        <div class="l_link">
+        <a href="">기업 및 단체구매안내</a>
+        <a href="">가맹상담신청</a>
+        <a href="">사이버신문고</a>
+        </div>
+       <div class="r_text">
+        <p class="r_text1">Address</p>
+        <p class="r_text2">서울특별시 중구 을지로 170, 8층(을지로4가, 을지트윈타워)투썸플레이스(주)</p>
+        <br><p class="r_text1">Customer Center</p>
+        <p class="r_text2">고객센터 : 1577-4410  팩스 : 02-2058-6777</p>
+       </div> 
+       <br><br><hr><br><br>
+       <div class="last_link">
+        <a href="">이용약관</a>
+        <a href="" class="pointtext">개인정보처리방침</a>
+        <a href="">위치기반서비스 이용약관</a>
+        <a href="">이메일 무단수집거부</a>
+        <a href="">법적고지</a>
+        <a href="">사업자정보확인</a>
+       </div>
+       <div class="min_text">
+        <p>
+        대표이사 : 이영삼 | 개인정보보호책임자 : 장재호 | 사업자등록번호 : 404-86-01054 <br>
+        통신판매업종신고증 : 제 2018-서울중구-0353호 | 대표이메일 : helpmaster@twosome.co.kr <br>
+        Copyright # 2021 A TWOSOME PLACE Co.,LTD. All Rights Reserved.
+        </p>
+       </div>
+       <div class="f_icon">
+        <img src="" alt="">
+       </div>
+    </footer>
+
+</body>
+</html>

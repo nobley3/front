@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      *{
+        padding: 0px;
+        margin: 0px;
+      }
+     
+     .box{
+      display: flex;
+      width: 800px;
+      height: 500px;
+      border: 1px solid black;
+      overflow: hidden;
+      position: relative;
+     }
+     .box h1{
+       font-size: 50px;
+       color: antiquewhite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+      z-index: 5;
+     }
+     img{
+      width: 800px;
+      height: 500px;
+      object-fit: cover;
+      animation: slide 8s infinite;
+     }
+     @keyframes slide{
+      0%{
+        transform: translate(0,0);
+      }
+      25%{
+        transform: translate(-800px,0);
+      }
+      50%{
+        transform: translate(-1600px,0);
+      }
+      75%{
+        transform: translate(-2400px,0);
+      }
+      100%{
+        transform: translate(0,0);
+      }
+     }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box">
+        <h1>ANIMATION</h1>
+        <div  ><img src="../images/badage1.jpg" alt=""></div>
+        <div  ><img src="../images/badage2.jpg" alt=""></div>
+        <div  ><img src="../images/badage1.jpg" alt=""></div>
+        <div  ><img src="../images/badage2.jpg" alt=""></div>
+      </div>
+    </section>
+  </body>
+</html>

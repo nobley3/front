@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> </title>
+	<style>
+ 
+ .parent{
+  display: flex;
+  flex-direction: row; /*부모가 가지는 속성*/
+ }
+ .child{
+  flex: 1; /*자식이 가지는 속성 ex order:순서*/
+  border: 1px solid black;
+ }
+ @media(max-width:767px){
+  .parent{
+    flex-direction: column;
+  }
+  .child:nth-child(1){
+    order: 3;
+  }
+  .child:nth-child(2){
+    order: 1;
+  }
+  .child:nth-child(3){
+    order: 2;
+  }
+ }
+	</style>
+<body>
+
+	<div class="parent">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+	</div>
+
+</body>
+</html>

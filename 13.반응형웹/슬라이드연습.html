@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tourheader.css">
+    <link rel="stylesheet" href="toursection.css">
+    <link rel="stylesheet" href="tourfooter.css">
+
+</head>
+<body>
+    <div class="slideboxWrap">
+        <div class="mainSlideBox">
+          <div class="slideText">
+            <div class="textBox">
+              <ul>
+                <li>
+                  <div class="slideTitle">
+                    <em>새로운 Feel the Rhythm of Korea!</em>
+                    <strong style="color:#3d3d3d">한국관광 홍보영상 속 촬영지로 떠나는 여행!</strong>
+                    <a href="#">자세히 보기</a>
+                  </div>
+                  <!-- 텍스트추가 -->
+                 
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="slideImgs">
+            <div class="imgBox">
+              <div class="imgslideWrap"> <!--슬라이드 크기 가로로 -->
+                <div class="imgList">
+                  <a href="#">
+                    <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=ea11b039-44ca-4555-b4c4-1fe8efe273c0&mode=raw" alt="한국관광 홍보영상 속 촬영지로 떠나는 여행!">
+                  </a>
+                </div>
+                <!-- 여러 슬라이드 이미지 추가 가능 -->
+                <div class="imgList">
+                    <a href="#">
+                      <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=97352946-9e39-4e52-8b2c-bc311711ac4f&mode=raw">
+                    </a>
+                  </div>
+                  <div class="imgList">
+                    <a href="#">
+                      <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=e8dd0582-f1e5-4826-9f26-51863ecfdb1f&mode=raw" alt="한국관광 홍보영상 속 촬영지로 떠나는 여행!">
+                    </a>
+                  </div>
+                  <div class="imgList">
+                    <a href="#">
+                      <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=727cae9b-49d2-4d36-a5ec-a5c5d8bd73c1&mode=raw" alt="한국관광 홍보영상 속 촬영지로 떠나는 여행!">
+                    </a>
+                  </div>
+                  <div class="imgList">
+                    <a href="#">
+                      <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=ea11b039-44ca-4555-b4c4-1fe8efe273c0&mode=raw" alt="한국관광 홍보영상 속 촬영지로 떠나는 여행!">
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pageBoxWrap">
+          <div class="pageBox">
+            <div class="pageNum">
+              <span class="slidebar"><span class="fill"></span></span>
+            </div>
+            <div class="paging">
+              <span class="firstNum">01</span>
+              /
+              <span class="secondNum">11</span>
+            </div>
+            <div class="btnBox">
+              <div class="btnpreNum" tabindex="0" role="button" aria-label="Previous slide">이전</div>
+              <div class="btnnexNum" tabindex="0" role="button" aria-label="Next slide">다음</div>
+              <div class="btnAuto">
+                <button class="btnPlay">재생</button>
+                <button class="btnStop">멈춤</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        const slides = document.querySelectorAll('.imgList');
+let currentSlide = 0;
+let autoPlayInterval; // 재생 상태를 나타내는 변수
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.display = i === index ? 'block' : 'none';
+  });
+}
+
+function updatePageNumber() {
+  const firstNumElement = document.querySelector('.firstNum');
+  const secondNumElement = document.querySelector('.secondNum');
+  firstNumElement.textContent = (currentSlide + 1).toString().padStart(2, '0');
+  secondNumElement.textContent = slides.length.toString().padStart(2, '0');
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+  updatePageNumber();
+}
+
+function previousSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+  updatePageNumber();
+}
+
+showSlide(currentSlide);
+
+document.querySelector('.btnnexNum').addEventListener('click', nextSlide);
+document.querySelector('.btnpreNum').addEventListener('click', previousSlide);
+
+function playSlideShow() {
+  autoPlayInterval = setInterval(nextSlide, 3000);
+}
+
+function stopSlideShow() {
+  clearInterval(autoPlayInterval);
+}
+
+document.querySelector('.btnPlay').addEventListener('click', playSlideShow);
+document.querySelector('.btnStop').addEventListener('click', stopSlideShow);
+
+// 페이지 로드 후 슬라이드 쇼 자동 시작
+playSlideShow();
+
+// JavaScript로 페이지 텍스트 업데이트
+const titleElement = document.querySelector('.slideTitle strong');
+const emElement = document.querySelector('.slideTitle em');
+
+const pageTexts = [
+  {
+    title: '소중한 우리 땅,',
+    em: '독도의 날 🤍',
+  },
+  // 다른 페이지 텍스트 추가 가능
+  {
+    title: '2023 가을 단풍놀이 떠날 지도🍂',
+    em: '알록달록한 가을 속으로!',
+  },
+  {
+    title: '섬들이 반겨주는',
+    em: '디지털관광주민증 할인 혜택',
+  },
+  {
+    title: '울릉도 자유여행',
+    em: '울릉도 자유여행 추천지',
+  },
+  {
+    title: '은빛 물결 가득한 제주도의 가을',
+    em: '제주도 억새 명소',
+  },
+];
+
+function updatePageText() {
+  titleElement.textContent = pageTexts[currentSlide].title;
+  emElement.textContent = pageTexts[currentSlide].em;
+}
+
+updatePageText(); // 페이지 텍스트 초기화
+
+// 슬라이드가 변경될 때 페이지 텍스트 업데이트
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+  updatePageNumber();
+  updatePageText(); // 페이지 텍스트 업데이트
+}
+
+function previousSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+  updatePageNumber();
+  updatePageText(); // 페이지 텍스트 업데이트
+}
+
+      </script>
+</body>
+</html>

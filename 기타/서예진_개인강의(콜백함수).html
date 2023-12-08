@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+1.
+        words=['spraty','limit','elite','exuberant','destruction','present'];
+        function callback(element){
+            console.log(element);
+        }
+        words.filter(callback);
+2.
+
+        words=['spraty','limit','elite','exuberant','destruction','present'];
+        function callback(element){
+            console.log(element);
+            if(element.length>6){
+                return true;
+            }else{
+                return false;
+            }
+        }
+       newwords = words.filter(callback);
+       console.log(newwords);
+
+3.
+
+    words=['spraty','limit','elite','exuberant','destruction','present'];
+        function callback(element){
+           return element.length>6;
+        }
+       newwords = words.filter(callback);
+       console.log(newwords);
+
+4.//익명함수
+
+    words=['spraty','limit','elite','exuberant','destruction','present'];
+       
+       newwords = words.filter(function (element){
+           return element.length>6;
+        });
+       console.log(newwords);
+
+5. //화살표함수
+    words=['spraty','limit','elite','exuberant','destruction','present'];
+       
+       newwords = words.filter((element)=>{
+           return element.length>6;
+        });
+       console.log(newwords);
+
+6. //더간단하게 
+
+    words=['spraty','limit','elite','exuberant','destruction','present'];
+       
+       newwords = words.filter(element=>element.length>6);
+       console.log(newwords);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
