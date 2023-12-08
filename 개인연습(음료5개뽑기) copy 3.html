@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+
+
+        function btn(){
+
+            
+            let beverage1="블랙밀크티";
+            let beverage2="자몽그린티";
+            let beverage3="망고요구르트";
+            let beverage4="초콜렛밀크티";
+            let beverage5="타로밀크티";
+
+
+             let content = document.getElementById("content");
+             //alert(content);
+
+             let str= beverage1+"<br>"+beverage2+"<br>"+beverage3+"<br>"+beverage4+"<br>"+beverage5;
+
+             content.innerHTML=str;
+         
+        }
+    
+    </script>
+</head>
+<body>
+    <button onclick="btn()">click</button>
+    <div id="content"></div>
+</body>
+</html>
